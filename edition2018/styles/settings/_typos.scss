@@ -1,0 +1,49 @@
+// main: ../global.scss
+
+/** ================================================
+               # TYPOS
+================================================ **/
+
+$police1 : Arial;
+$police2 : 'Roboto', Arial;
+
+$police-taille--petite   : 14px;
+$police-taille--normale  : 16px;
+$police-taille--moyenne  : 18px;
+$police-taille--grande   : 20px;
+$police-taille--enorme   : 25px;
+
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+p {}
+
+*::placeholder {}
+
+
+
+
+
+  /** ------------------------------------------------
+                  tablette paysage
+  ------------------------------------------------ **/
+
+  @media (max-width: $tablette-paysage) { }
+
+  /** ------------------------------------------------
+                  tablette portrait
+  ------------------------------------------------ **/
+
+  @media (max-width: $tablette-portrait) { }
+
+  /** ------------------------------------------------
+                  Mobile
+  ------------------------------------------------ **/
+
+  @media (max-width: $mobile) { }

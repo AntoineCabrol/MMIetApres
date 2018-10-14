@@ -12,16 +12,68 @@
     <meta property="og:url" content="http://mmietapres.fr/" />
     <meta property="og:image" content="images/og.png" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700" rel="stylesheet">
-  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/global.min.css" />
   <link rel="icon" href="images/favicon.ico" />
   <meta name="author" content="MMI&Après"/>
   <meta name="description" content="La rencontre étudiants/entreprises du multimédia à Chambéry !" />
 </head>
 
 
-<body>
+<body class="page-index page-index--attente">
 
-  Bientôt !
+  <!-- Message d'attente -->
+  <aside class="attente">
+
+    <div class="attente__rebours">
+      <span id="clock"></span>
+      <div class="attente__rebours-labels">
+        <span class="attente__rebours-label">Jours</span>
+        <span class="attente__rebours-label">Heures</span>
+        <span class="attente__rebours-label">Minutes</span>
+        <span class="attente__rebours-label">Secondes</span>
+      </div>
+    </div>
+
+    <article class="attente__container">
+
+      <header class="attente__header">
+        <img src="images/logo.svg"
+             class="attente__header-logo"
+             alt="logo de MMI & Après"
+             height="100%"/>
+      </header>
+
+      <section class="attente__content">
+        <span>Hep hep hep ne partez pas !</span>
+        <span>On revient bientôt avec un nouveau site !</span>
+        <span>Regardez, on a déjà notre nouveau logo ! 👀</span>
+      </section>
+
+      <footer class="attente__footer">
+        <a href="mailto:mmietapres.iutchambery@gmail.com">
+          mmietapres.iutchambery@gmail.com</a>
+        <br />
+        <a href="tel:06 65 03 86 92">06 65 03 86 92</a>
+      </footer>
+
+    </article>
+  </aside>
+
+
+
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <!-- Compte à rebours -->
+  <script src="scripts/jquery.countdown/jquery.countdown.js"></script>
+  <script type="text/javascript">
+    $('#clock').countdown('2019/10/10', function(event) {
+      $(this).html(event.strftime('%d : %H : %M : %S'));
+    });
+  </script>
+
+
 
 </body>
 

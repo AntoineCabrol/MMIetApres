@@ -1,0 +1,17 @@
+/** ================================================
+                # GLOBAL
+================================================ **/
+
+@import "./settings/_couleurs";
+@import "./settings/_reset";
+@import "./settings/_breakpoints";
+@import "./settings/_typos";
+
+@import "./components/_header";
+@import "./components/_boutons";
+@import "./components/_formulaires";
+@import "./components/_footer";
+
+//@import "./layouts/_";
+
+@import "./pages/_index";
