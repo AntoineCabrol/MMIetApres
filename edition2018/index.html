@@ -24,15 +24,6 @@
   <!-- Message d'attente -->
   <aside class="attente">
 
-    <div class="attente__rebours">
-      <span id="clock"></span>
-      <div class="attente__rebours-labels">
-        <span class="attente__rebours-label">Jours</span>
-        <span class="attente__rebours-label">Heures</span>
-        <span class="attente__rebours-label">Minutes</span>
-        <span class="attente__rebours-label">Secondes</span>
-      </div>
-    </div>
 
     <article class="attente__container">
 
@@ -43,10 +34,20 @@
              height="100%"/>
       </header>
 
+      <div class="attente__rebours">
+        <span id="clock"></span>
+        <div class="attente__rebours-labels">
+          <span class="attente__rebours-label">Jours</span>
+          <span class="attente__rebours-label">Heures</span>
+          <span class="attente__rebours-label">Minutes</span>
+          <span class="attente__rebours-label">Secondes</span>
+        </div>
+      </div>
+
       <section class="attente__content">
         <span>Hep hep hep ne partez pas !</span>
-        <span>On revient bientôt avec un nouveau site !</span>
-        <span>Regardez, on a déjà notre nouveau logo ! 👀</span>
+        <span>On revient bientôt avec un nouveau site.</span>
+        <span>Regardez, on a déjà notre nouveau logo !</span>
       </section>
 
       <footer class="attente__footer">
@@ -68,8 +69,8 @@
   <!-- Compte à rebours -->
   <script src="scripts/jquery.countdown/jquery.countdown.js"></script>
   <script type="text/javascript">
-    $('#clock').countdown('2019/10/10', function(event) {
-      $(this).html(event.strftime('%d : %H : %M : %S'));
+    $('#clock').countdown('2018/12/01', function(event) {
+      $(this).html(event.strftime('%D : %H : %M : %S'));
     });
   </script>
 
