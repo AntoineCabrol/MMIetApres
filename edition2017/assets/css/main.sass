@@ -1,0 +1,584 @@
+@import "assets.sass"
+body
+  font-family: 'Mmifont'
+.img_black
+  background: rgba(0, 0, 0, 1) !important
+.container, .container-fluid
+  padding: 0
+  margin: 0 auto
+.container-fluid
+  width: calc(100% - 75px)
+  margin: 0
+  float: right
+  opacity: 0
+// .full_intro
+//   width: 100vw !important
+//   height: 100vh !important
+//   position: fixed !important
+//   top: 0
+//   left: 0
+//   right: 0
+//   bottom: 0
+b
+  color: $noir
+.b_a
+  color: $jaune
+  text-decoration: underline
+  &:hover
+    color: $jaune
+    text-decoration: underline
+.deroulement_p
+  text-align: center
+  font-size: 20px
+  font-style: italic
+  color: lighten($jaune, 30%)
+  margin: 0 auto 50px auto
+  display: inline-block
+.item_content
+  text-align: center
+  color: $rouge
+  transition: all .3s ease
+  opacity: 0
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px
+  background: transparent
+  p
+    color: white
+.item_content_open
+  a
+    .item_content
+      text-align: center
+      color: $rouge
+      transition: all .3s ease
+      opacity: 1
+      background: $jaune
+      position: fixed
+      height: 100%
+      width: 100%
+      p
+        color: white
+underline
+  position: relative
+  &::before
+    left: 0
+    right: 0
+    bottom: 0
+    position: absolute
+    display: block
+    content: ""
+    background: $jaune
+    height: 50%
+    width: 100%
+    transform: translate(-3px,0px)
+    z-index: -1
+.animation, .intro
+  min-height: 500px
+.animation
+  background: $bleu
+  max-width: 100%
+  width: 100%
+  overflow: hidden
+  z-index: 3
+  position: relative
+  transition: all 1s cubic-bezier(0, 0.84, 0.73, 1)
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  #bodymovin
+    margin: 0 auto
+    z-index: 1
+    height: 100vh !important
+    transform: scale(1.4)
+    svg
+      height: 80vh !important
+  .intro_info
+    position: absolute
+    top: 70%
+    z-index: 2
+    text-align: center
+    height: auto
+    display: table
+    opacity: 0
+    transition: all .6s ease
+    transition-delay: 3300ms
+    .date_jourj
+      font-family: Mmifont-Light
+      font-size: 45px
+      color: #FFFFFF
+      letter-spacing: 10px
+      display: block
+      margin: 50px
+      margin-bottom: 10px
+    .place
+      font-size: 20px
+      margin-top: 0
+      margin-bottom: 50px
+    a
+      padding: 12px 70px
+      text-decoration: none
+      background-color: $jaune
+      color: white
+      margin: 0 auto
+      &:hover, &:active
+        text-decoration: none
+        color: white
+  img
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
+    z-index: -1
+    opacity: .3
+.intro_padding
+  padding: 0 50px
+.intro
+  display: inline-flex
+  justify-content: space-between
+  align-items: center
+  height: 100vh
+  width: 100%
+  h2
+    font-family: Mmifont-Black
+    font-size: 45px
+    color: $noir
+    letter-spacing: 10px
+    margin-bottom: 30px
+    margin-top: 0
+  .explication
+    width: calc(50% + 75px/2)
+    p
+      color: #999999
+.deroulement
+  text-align: center
+  margin: 100px 0 50px 0
+  .timeline
+    height: 100%
+    width: 100%
+    width: fit-content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 auto
+    position: relative
+    text-align: center
+    border-left: 3px solid #e6e6e6
+    padding: 0
+    // &::before
+    //   content: ""
+    //   display: block
+    //   height: 100%
+    //   width: 3px
+    //   background: red
+    //   position: absolute
+    //   left: 50%
+    //   transform: translateX(-50%)
+    .event
+      width: 100% !important
+      margin: 20px 0 20px -3px !important
+      .content
+        // background: #eee
+        display: block
+        padding-left: 10px
+        border-left: 3px solid $rouge
+        height: 100%
+        text-align: left
+        .event_heure
+          color: $rouge
+          font-family: Mmifont-Black
+          font-size: 15px
+          letter-spacing: 1px
+          margin-bottom: 10px
+          display: block
+          text-align: left
+        .event_title
+          font-family: Mmifont-Heavy
+          font-size: 24px
+          color: $noir
+          letter-spacing: 1.6px
+        .event_description
+          display: block
+          text-align: left
+        .event_salle
+          font-family: Mmifont
+          font-size: 15px
+          color: #999999
+          letter-spacing: 1px
+          float: right
+    .event_right
+      .content
+        float: right
+    .event_left
+      .content
+        float: left
+        border-right: 3px solid $rouge
+        padding-right: 10px
+        border-left: none
+        padding-left: 0
+        .event_heure
+          color: $rouge
+          font-family: Mmifont-Black
+          font-size: 15px
+          letter-spacing: 1px
+          display: block
+          text-align: right
+          margin-bottom: 10px
+        .event_title
+          font-family: Mmifont-Heavy
+          font-size: 24px
+          color: $noir
+          letter-spacing: 1.6px
+          float: right
+        .event_salle
+          font-family: Mmifont
+          font-size: 15px
+          color: #999999
+          letter-spacing: 1px
+          float: left
+.testi
+  margin: 0 auto
+  padding-bottom: 100px
+  h2
+    text-align: center
+  .owl-carousel
+    .owl-item
+      width: 100%
+    li
+      cursor: pointer
+      box-sizing: border-box
+      border: 1px solid $jaune
+      padding: 20px 0
+      background: white
+      &::before
+        transition: all .3s ease
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        top: 0
+        background-color: $jaune
+        z-index: -1
+      &:hover
+        &::before
+          top: 5px
+          left: 5px
+          bottom: -5px
+          right: -5px
+  .slider_entreprises
+    margin-bottom: 100px
+    li
+      height: 130px
+      img
+        width: 100%
+        height: 100%
+        object-fit: contain
+  .slider_avis
+    li
+      border: none
+      &:hover
+        &::before
+          display: none
+      img
+        width: 75px
+        height: 75px
+        object-fit: cover
+        border-radius: 50%
+        margin: 0 auto
+      .prez
+        margin: 10px 0 30px 0
+        .nom, .prez_entreprises
+          text-align: center
+          display: block
+        .nom
+          font-family: Mmifont-Heavy
+          font-size: 16px
+          color: #021527
+          letter-spacing: 1px
+        .prez_entreprises
+          font-family: Mmifont-Heavy
+          font-size: 16px
+          color: #EAB31E
+          letter-spacing: 1px
+      .prez_p
+        font-family: Mmifont-Light
+        font-size: 14px
+        color: #999999
+        letter-spacing: 1px
+        text-align: justify
+.inscription
+  text-align: center
+  position: relative
+  padding: 100px
+  background: rgba($bleu, .9)
+  h2
+    margin: 0
+    padding: 0
+    margin-bottom: 30px
+    color: white
+  p
+    color: white
+    margin-bottom: 100px
+  a
+    padding: 12px 70px
+    text-decoration: none
+    background-color: $jaune
+    color: white
+    margin: 0 auto
+    display: inline-block
+    &:hover, &:active
+      text-decoration: none
+      color: white
+  img
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
+    z-index: -1
+    opacity: 1
+footer
+  background: $bleu
+  padding: 50px 140px 10px 140px
+  h2
+    color: white
+    margin: 50px 0 30px 0
+  ul
+    max-width: 1000px
+    margin: 0 auto
+    li
+      color: white
+  a
+    text-decoration: underline
+    color: white
+    &:hover
+      color: $jaune
+  div
+    display: flex
+    align-items: flex-start
+    margin: 0 auto
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    max-width: 1000px
+    padding-top: 50px
+    .plan
+      margin: 10px 0
+      text-align: left
+      float: left
+      li
+        &:first-child
+          a
+            color: $jaune
+            font-size: 26px
+            &:hover
+              color: $jaune
+    .menu_logo
+      margin: 10px 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      li
+        margin: 0 15px
+        img
+          max-height: 50px
+  .mentions
+    display: inline-block
+    text-align: center
+    margin: 0 auto
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+@media only screen and (max-width: 1300px)
+  .padding
+    padding: 0 60px
+  .inscription
+    padding: 50px 0
+  body
+    .animation
+      #bodymovin
+        height: 100vh !important
+        transform: scale(1.2)
+    .deroulement
+      .timeline
+        justify-content: left
+        &::before
+          display: none
+        .event
+          width: auto
+          display: inline-block
+          margin: 10px 0
+        .event_right, .event_left
+          .content
+            float: left
+            border-right: 0
+            border-left: 3px solid $rouge
+            padding-left: 10px
+            padding-right: 0
+            .event_heure
+              color: $rouge
+              font-family: Mmifont-Black
+              font-size: 15px
+              letter-spacing: 1px
+              display: block
+              text-align: left
+              margin-bottom: 10px
+            .event_title
+              font-family: Mmifont-Heavy
+              font-size: 24px
+              color: $noir
+              letter-spacing: 1.6px
+              float: left
+            .event_salle
+              font-family: Mmifont
+              font-size: 15px
+              color: #999999
+              letter-spacing: 1px
+              float: right
+@media only screen and (min-width: $break-medium) and (max-width: $break-large - 1)
+    body
+    .animation
+      width: 100% !important
+      position: relative
+      height: 100vh
+    .void
+      display: none
+    .intro
+      width: 100%
+      display: inline-block
+      height: 100%
+      min-height: 100%
+      .explication
+        width: 100%
+        text-align: center
+        padding: 0 50px
+    .container-fluid
+      width: calc(100% - 50px)
+    .menu_content
+      left: calc(-100% - 50px)
+    .menu
+      width: 50px
+      .hamburger
+        height: 100vh
+        width: 50px
+    .menu_content_open
+      left: 0
+    h2
+      margin-top: 50px
+      margin-bottom: 50px
+    .deroulement
+      margin: 0
+    .inscription
+      padding: 50px 15px 50px 15px
+      a
+        display: inline-block
+    footer
+      padding: 50px 15px 50px 15px
+      text-align: center
+@media only screen and (min-width: 0) and (max-width: $break-medium - 1)
+  .animation
+    width: 100% !important
+    position: relative
+    height: 100vh
+    padding: 0
+    #bodymovin
+      height: 100vh !important
+      svg
+        height: 80vh !important
+        transform: scale(1.4)
+    .intro_info
+      .date_jourj
+        font-size: 20px
+        margin-left: 20px
+        margin-right: 20px
+      .place
+        font-size: 15px
+        margin-left: 20px
+        margin-right: 20px
+  .void
+    display: none
+  .intro
+    width: 100%
+    display: inline-block
+    height: 100%
+    min-height: 100%
+    .explication
+      width: 100%
+      text-align: center
+      padding: 0 0px
+  h2, .intro h2
+    font-size: 30px
+    margin-top: 50px
+    margin-bottom: 50px
+  .padding
+    padding: 0 15px
+  .deroulement
+    .timeline
+      .event
+        width: 100%
+  .container-fluid
+    width: calc(100% - 30px)
+  .menu_content
+    left: calc(-100% - 30px)
+  .menu
+    width: 30px
+    .hamburger
+      padding: 5px
+      height: 100vh
+      width: 30px
+  .menu_content_open
+    left: 0
+  .deroulement
+    margin: 0
+  .inscription
+    padding: 50px
+    h2
+  footer
+    padding: 50px 15px 50px 15px
+    text-align: center
+    div
+      .plan
+        text-align: center
+        display: inline-block
+        width: 100%
+      .menu_logo
+        margin: 10px auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        li
+          img
+            max-width: 75px
+  .menu_content nav ul li a, .menu_content nav ul li:hover, .menu_content nav ul li:active
+    font-size: 30px
+    margin: 0 10px
+  .menu_content nav ul li:hover, .menu_content nav ul li:active
+    margin: 0
+  .menu_content_open
+    nav
+      .menu_logo
+        li
+          img
+            width: auto
+            height: 50px

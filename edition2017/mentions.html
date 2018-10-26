@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>MMI&amp;Après</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/owl.theme.default.css">
+  </head>
+  <body class="body_fixed">
+    <div class="menu_mentions">
+      <nav>
+        <ul class="list-unstyled">
+          <li><a href="/">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="" d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+						</svg>
+            <span>Accueil</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-fluid mentions_legales" style="width: 100%">
+      <div class="padding">
+        <h2>Mentions légales</h2>
+        <ul class="list-unstyled col-xs-12 col-md-10 col-sm-10 col-lg-6">
+          <li>
+              <h3>Hébergement</h3>
+              <p>Université de Savoie, 28 avenue du lac d'Annecy, 73370 Le Bourget-du-Lac, France</p>
+              <a href="#">www.iut-chy.univ-smb.fr</a>
+          </li>
+          <li>
+              <h3>Conception site web et graphique</h3>
+              <a href="https://www.linkedin.com/in/salah-lamkadem-669305124/">Salah Lamkadem</a>
+          </li>
+          <li>
+              <h3>Rédaction contenu</h3>
+              <a>Elodie Spicher</a>
+          </li>
+          <li>
+              <h3>Rédaction contenu</h3>
+              <a href="https://www.facebook.com/profile.php?id=100008539110281&ref=br_rs">Elie Cordel</a>
+          </li>
+          <li>
+              <h3>Législation</h3>
+              <p>Conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés, vous disposez d'un droit d'accès aux informations vous concernant. Vous pouvez modifier ou supprimer ces informations en nous contactant @ : secretariat.src@univ-savoie.fr Adresse : Département MMI, IUT de CHAMBERY, Université de Savoie IUT de Chambéry Campus Scientifique - Savoie Technolac 73376 Le Bourget du Lac Cedex</p>
+              <p>Site responsive</p>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <script src="./assets/js/jquery-3.1.0.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bodymovin.js" charset="utf-8"></script>
+    <script src="./assets/js/owl.carousel.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    $( document ).ready(function() {
+    $('body').removeClass('body_fixed');
+    $('.container-fluid').animate({
+        opacity: '1'
+    },800);
+    });
+
+
+    $('.hamburger span').click(function(){
+      $(this).toggleClass('close');
+      $('.menu_content').toggleClass('menu_content_open').delay(1000);
+      $('.menu').toggleClass('menu_index');
+      // $('body').toggleClass('noscroll');
+    });
+    $('.menu_content').click(function(){
+      $('.hamburger span').toggleClass('close');
+      $('.menu_content').toggleClass('menu_content_open');
+      $('.menu').toggleClass('menu_index');
+    })
+    </script>
+    <style media="screen">
+      .menu_mentions nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #011628;
+      }
+      .menu_mentions nav ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 900px;
+        width: 100%;
+        background: #011628;
+        margin: 0 auto;
+      }
+      .menu_mentions nav ul li{
+        padding: 15px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu_mentions nav ul li a{
+        color: white;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0;
+      }
+      .menu_mentions nav ul li a svg{
+        fill: white;
+        height: 20px;
+      }
+      .menu_mentions nav ul li a:hover{
+        color: #EAB31E;
+        text-decoration: none;
+      }
+      .menu_mentions nav ul li a:hover svg{
+        fill: #EAB31E;
+      }
+    </style>
+  </body>
+</html>

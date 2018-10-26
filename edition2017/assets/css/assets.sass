@@ -1,0 +1,195 @@
+$bleu: #011628
+$jaune: #EAB31E
+$rouge: #C91F3D
+$noir: #021527
+@font-face
+  font-family: 'Mmifont-Light'
+  src: url('../font/Avenir-Light-07.ttf') format('truetype')
+@font-face
+  font-family: 'Mmifont'
+  src: url('../font/Avenir-Black-03.ttf') format('truetype')
+  src: url('../font/Avenir.ttc')  format('truetype')
+@font-face
+  font-family: 'Mmifont-Medium'
+  src: url('../font/Avenir-Medium-09.ttf') format('truetype')
+@font-face
+  font-family: 'Mmifont-Heavy'
+  src: url('../font/Avenir-Heavy-05.ttf') format('truetype')
+@font-face
+  font-family: 'Mmifont-Black'
+  src: url('../font/Avenir-Black-03.ttf') format('truetype')
+.social_networks
+  margin: 0 auto
+  justify-content: center
+  margin-bottom: 100px
+  a
+    margin: 0 20px
+    .social_network
+      height: 50px
+      width: 50px
+      text-align: center
+      img
+        height: 100%
+        width: 100%
+        object-fit: contain
+  h3
+    color: white
+    width: 100%
+    text-align: center
+    margin-bottom: 20px
+body
+  --main-bg-color: red
+  // font-family: 'Mmifont'
+.body_fixed
+  position: fixed
+  height: 100vh
+  width: 100vw
+$break-small: 320px
+$break-medium: 768px
+$break-large: 1200px
+h2
+  // font-family: 'Avenir-Black', 'Avenir-Black-03'
+  font-weight: 900 !important
+  font-size: 45px
+  color: $noir
+  letter-spacing: 10px
+  margin-top: 150px
+  margin-bottom: 100px
+  text-align: center
+  font-family: 'Mmifont-Black'
+p
+  // font-family: Avenir
+  font-size: 15px
+  color: $noir
+  letter-spacing: 1px
+.h2-title
+  font-family: 'Mmifont-Black'
+  font-size: 16px
+  color: $noir
+  letter-spacing: 5px
+  margin-bottom: 20px
+  display: block
+.menu
+  height: 100vh
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 3
+  .hamburger
+    height: 100vh
+    width: 75px
+    background-color: $bleu
+    display: flex
+    justify-content: center
+    align-items: center
+    opacity: 1
+    span
+      width: 30px
+      height: 15px
+      position: relative
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      align-items: center
+      &::before,&::after
+        display: block
+        content: ""
+        height: 3px
+        width: 100%
+        background: $jaune
+        transition: all .3s ease
+    .close
+      opacity: 1
+      &::before
+        // transform-origin: left 50%
+        height: 100%
+      &::after
+        height: 5px
+        width: calc(100% - 10px)
+        transform: translateY(-10px)
+        background: $bleu
+        // transform-origin: left 50%
+.menu_content
+  position: fixed
+  left: calc(-100% + 75px )
+  top: 0
+  height: 100vh
+  width: 100%
+  background: $bleu
+  z-index: 2
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 1
+  transition: all 1s ease
+  overflow: hidden
+  nav
+    opacity: 0
+    transition: all .7s ease
+    transition-delay: .4s
+    position: fixed
+    padding: 75px
+    ul
+      li
+        display: flex
+        justify-content: center
+        align-items: center
+        a, &:hover, &:active
+          font-size: 50px
+          color: white
+          text-decoration: none
+        a
+          color: white
+          &:hover
+            color: $jaune
+            text-decoration: none
+    .menu_logo
+      display: flex
+      justify-content: space-around
+      align-items: center
+      position: static
+      bottom: 0
+      li
+        img
+          height: 100px
+          width: 100px
+          object-fit: contain
+.menu_content_open
+  // width: 100%
+  left: 0%
+  z-index: 4
+  nav
+    opacity: 1
+    .menu_logo
+      display: flex
+      justify-content: space-around
+      align-items: center
+      li
+        img
+          height: 100px
+          width: 100px
+          object-fit: contain
+.noscroll
+  position: fixed
+.menu_index
+  z-index: 5
+.mentions_legales
+  ul
+    margin: 0 auto
+    display: block
+    margin-bottom: 100px
+    max-width: 900px
+    li
+      margin: 50px 0
+      h3
+        margin-bottom: 15px
+      p
+        color: #999
+  a
+    color: $bleu
+    border-bottom: 2px solid $bleu
+    text-decoration: none
+    &:hover
+      color: $jaune
+      text-decoration: none
+      border-bottom: 2px solid $jaune
