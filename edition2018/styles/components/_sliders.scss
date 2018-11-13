@@ -1,0 +1,49 @@
+// main: ../global.scss
+
+/** ================================================
+                # SLIDER
+================================================ **/
+
+.slider {
+  position: relative;
+
+  // flèches droite - gauche
+  .slick-arrow {
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    &::before, &::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $couleur-logo1;
+    }
+    &::before { transform: rotate(45deg) translateY(-8px); }
+    &::after { transform: rotate(-45deg) translateY(8px); }
+
+    &.slick-prev { left: 0; transform: rotate(-180deg); }
+    &.slick-next { right: 0; }
+  }
+
+  // zone créée par Slick pour stocker les slides
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      display: flex;
+      margin: 0 20px;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.2s;
+      &.slick-active { opacity: 1; }
+    }
+
+  }
+
+}
