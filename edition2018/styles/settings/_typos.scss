@@ -14,7 +14,13 @@ $police-taille--grande   : 20px;
 $police-taille--enorme   : 25px;
 
 
-h1 {}
+h1 {
+	text-align: center;
+	font-weight: 300;
+	letter-spacing: 4px;
+	font-size: 30px;
+  color: $couleur-logo1;
+}
 
 h2 {}
 

@@ -3,35 +3,6 @@
 
 <body class="page-index page-index--attente">
 
-  <!-- Message d'attente -->
-  <aside class="attente">
-
-    <article class="attente__container">
-
-      <header class="attente__header">
-        <img src="images/logo.png"
-             class="attente__header-logo"
-             alt="logo de MMI & Après"
-             height="100%"/>
-      </header>
-
-      <section class="attente__content">
-        <span>Hep hep hep ne partez pas !</span>
-        <span>On revient bientôt avec un nouveau site.</span>
-        <span>Regardez, on a déjà notre nouveau logo !</span>
-      </section>
-
-      <footer class="attente__footer">
-        <a href="mailto:contact@mmietapres.fr">
-          contact@mmietapres.fr</a>
-        <br />
-        <a href="tel:06 65 03 86 92">06 65 03 86 92</a>
-      </footer>
-
-    </article>
-
-  </aside>
-
   <?php include "includes/_animation.php" ?>
 
   <?php include "includes/_evenement.php" ?>
@@ -48,6 +19,21 @@
 
   <!-- JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev"></button',
+        nextArrow: '<button type="button" class="slick-next"></button',
+        centerMode: true,
+        initialSlide: 1
+      });
+    });
+  </script>
+
 
 </body>
 
