@@ -50,8 +50,8 @@ body {
   }
   94% {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 50px;
     width: 200px;
     height: 120px;
   }
@@ -65,8 +65,99 @@ body {
 }
 @keyframes splashScreenDesk--logo {
   0%, 94% {
-    width: 200px;
+    width: 400px;
+    height: 100%;
     margin: auto;
+    overflow: visible;
   }
   100% {}
+}
+
+
+
+
+// coloration
+.logo {
+  &__M1, &__M2, &__I, &__et { fill: #fff; }
+  &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
+    fill: $couleur-logo2;
+    animation-name: logoAPRES;
+    animation-duration: 2s;
+  }
+}
+
+@keyframes logoAPRES {
+  0%,80% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.logo__M1 {
+  animation-name: logoM1;
+  animation-duration: 2s;
+}
+@keyframes logoM1 {
+  0%, 28% {
+    opacity: 0;
+    transform: rotate(-15deg) scale(0.8);
+  }
+  40%,100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo__M2 {
+  animation-name: logoM2;
+  animation-duration: 2s;
+}
+@keyframes logoM2 {
+  0%, 40% {
+    opacity: 0;
+    transform: rotate(-15deg) scale(0.8);
+  }
+  52%,100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo__I {
+  animation-name: logoI;
+  animation-duration: 2s;
+}
+@keyframes logoI {
+  0%, 52% {
+    opacity: 0;
+    transform: rotate(-15deg) scale(0.8);
+  }
+  64%,100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo__et {
+  animation-name: logoEt;
+  animation-duration: 2s;
+}
+@keyframes logoEt {
+  0%, 64% {
+    opacity: 0;
+    transform: rotate(-15deg) scale(0.8) translate(-50px, 15px);
+  }
+  76%,100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
