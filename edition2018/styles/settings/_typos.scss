@@ -4,31 +4,41 @@
                # TYPOS
 ================================================ **/
 
-$police1 : Arial;
+$police1 : 'Montserrat', Arial;
 $police2 : 'Roboto', Arial;
 
-$police-taille--petite   : 14px;
-$police-taille--normale  : 16px;
-$police-taille--moyenne  : 18px;
-$police-taille--grande   : 20px;
-$police-taille--enorme   : 25px;
+$police-titre1   : 300 30px $police1;
+$police-titre2   : 300 25px $police1;
+$police-texte    : 300 16px $police2;
 
 
 h1 {
+	display: block;
+	margin: 30px auto;
 	text-align: center;
-	font-weight: 300;
-	letter-spacing: 4px;
-	font-size: 30px;
+	font: $police-titre1;
+	letter-spacing: 5px;
   color: $couleur-logo1;
 }
 
-h2 {}
+h2 {
+	display: block;
+	margin: 25px auto;
+	text-align: center;
+	font: $police-titre2;
+	letter-spacing: 5px;
+  color: $couleur-logo2;
+}
 
 h3 {}
 
 h4 {}
 
-p {}
+p {
+	font: $police-texte;
+	margin: 12px auto;
+	&:last-of-type { margin-bottom: 50px; }
+}
 
 *::placeholder {}
 

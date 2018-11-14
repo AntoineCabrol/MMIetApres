@@ -4,8 +4,22 @@
                # BOUTONS
 ================================================ **/
 
-.btn, input[type="submit"] { }
-
+.bouton {
+	flex: 1;
+	margin: 0 20px;
+	max-width:280px;
+	height:70px;
+	font-size:18px;
+	font-family: $police2;
+	font-weight: bold;
+  color: $couleur-logo2;
+	letter-spacing:3px;
+	border: 2px solid $couleur-logo2;
+	outline:none;
+	border-radius:5px;
+  line-height: 70px;
+  text-align: center;
+}
 
 
 

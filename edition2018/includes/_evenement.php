@@ -4,9 +4,9 @@
 
 	<div class="logo_menu">
 		<div class="logo">
-			<img class="logo_mmietapres" src="images/mmietapres.png">
+			<img class="logo_mmietapres" src="images/logo_clair.svg" width="100%">
 		</div>
-		<div class="menu">
+		<ul class="menu">
 			<nav>
 				<li>Présentation</li>
 				<li>Programme</li>
@@ -15,7 +15,7 @@
 				<li>S'inscrire</li>
 				<li>Contact</li>
 			</nav>
-		</div>
+		</ul>
 	</div>
 
 	<div class="presentation">
@@ -27,12 +27,8 @@
 
 		<h2>Inscription</h2>
 		<div class="boutons_inscription">
-			<div class="inscription_etudiants">
-				<input class="bouton_inscritpion_etudiants" type="button" value="Etudiants">
-			</div>
-			<div class="inscription_professionels">
-				<input class="bouton_inscritpion_professionnels" type="button" value="Professionnels">
-			</div>
+			<a class="bouton inscription_etudiants">Etudiants</a>
+			<a class="bouton inscription_professionels">Professionnels</a>
 		</div>
 	</div>
 	</div>
