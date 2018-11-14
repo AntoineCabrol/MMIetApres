@@ -30,9 +30,24 @@ h2 {
   color: $couleur-logo2;
 }
 
-h3 {}
+h3 {
+font-family:Montserrat;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+letter-spacing:1px;
+color:#C71F3D;
+margin-bottom:20px;
+}
 
-h4 {}
+h4 {
+font-family:Montserrat;
+font-size:16px;
+font-weight:bold;
+text-align:center;
+letter-spacing:2px;
+margin-bottom:10px;
+}
 
 p {
 	font: $police-texte;

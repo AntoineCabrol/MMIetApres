@@ -3,3 +3,81 @@
 /** ================================================
                 # PROGRAMME
 ================================================ **/
+
+.programme{
+	max-width:660px;
+	margin:auto;
+	background-color:white;
+}
+
+.programme p{
+	font-family:Roboto;
+	font-size:18px;
+	text-align:center;
+	width:290px;
+	margin:auto;
+}
+
+.programme_gauche{
+	margin-right:200px;
+	z-index:2; //ne fonctionne pas...
+	position:relative;
+  margin-bottom:150px;
+}
+
+.programme_droit{
+	margin-left:200px;
+	z-index:2; //ne fonctionne pas...
+	position:relative;
+  margin-bottom:150px;
+}
+
+#image_accueil{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:100px;
+	margin-top:20px;
+	z-index:1;
+	opacity:0.4;
+}
+
+#image_presentation_dut{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:120px;
+	/*margin-top:10px;*/ //semble pas nécessaire mais les cadrages des images sont à revoir
+	z-index:1;
+	opacity:0.4;
+}
+
+#image_stage_dating{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:130px;
+	margin-top:20px;
+	z-index:1;
+	opacity:0.4;
+}
+
+#image_buffet{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:130px;
+	margin-top:20px;
+	z-index:1;
+	opacity:0.4;
+}
+
+#image_tables_rondes{
+	width:200px;
+	height:auto;
+	position:absolute;
+	margin-left:130px;
+	margin-top:20px;
+	z-index:1;
+	opacity:0.4;
+}
