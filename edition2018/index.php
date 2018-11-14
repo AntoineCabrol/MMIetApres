@@ -3,8 +3,6 @@
 
 <body class="page-index page-index--attente">
 
-  <?php include "includes/_animation.php" ?>
-
   <?php include "includes/_evenement.php" ?>
 
   <?php include "includes/_programme.php" ?>

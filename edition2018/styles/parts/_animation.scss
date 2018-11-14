@@ -3,3 +3,70 @@
 /** ================================================
                 # ANIMATION
 ================================================ **/
+
+
+body {
+  animation-name: noScroll;
+  animation-duration: 4s;
+}
+@keyframes noScroll {
+  0%,85% { overflow: hidden; }
+  100% { overflow-y: auto; }
+}
+
+
+.menu, .presentation {
+  animation-name: apparition;
+  animation-duration: 4s;
+}
+@keyframes apparition {
+  0%,95% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+.logo {
+  animation-name: splashScreenDesk--fond;
+  animation-duration: 4s;
+  display: flex;
+}
+@keyframes splashScreenDesk--fond {
+  0%,65% {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  	@include couleur-gradient;
+  }
+  74% {
+    width: 100vw;
+    height: 560px;
+    background-color: transparent;
+  }
+  75% {
+    width: 100vw;
+    height: 560px;
+  }
+  94% {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 120px;
+  }
+  95%, 100% { position: static; }
+}
+
+.logo_mmietapres {
+  animation-name: splashScreenDesk--logo;
+  animation-duration: 4s;
+  margin: auto;
+}
+@keyframes splashScreenDesk--logo {
+  0%, 94% {
+    width: 200px;
+    margin: auto;
+  }
+  100% {}
+}

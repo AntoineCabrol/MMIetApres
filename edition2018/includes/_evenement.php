@@ -1,4 +1,4 @@
-<section class="evenement">
+<header class="evenement">
 
   <div class="wrap1">
 
@@ -33,4 +33,4 @@
 	</div>
 	</div>
 
-</section>
+</header>

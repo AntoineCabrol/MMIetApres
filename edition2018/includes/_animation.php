@@ -1,5 +1,0 @@
-<header class="animation">
-
-
-
-</header>
