@@ -1,0 +1,103 @@
+// main: ../global.scss
+
+/** ================================================
+                # EVENEMENT
+================================================ **/
+
+
+.evenement {
+	// Je met une hauteur trop petite pour faire dépasser le contenu,
+	height: 560px;
+	// et je compense avec un margin-bottom pour recréer l'espace avec la partie suivante
+	margin-bottom: 200px;
+	@include couleur-gradient;
+}
+
+// J'ai passé .wrap1 dans parts/_index.scss comme ça on sait qu'on s'en sert partout
+
+.logo_menu{
+	display:flex;
+	margin:13px auto auto;
+	justify-content:space-between;
+	width:100%;
+	margin-bottom:40px;
+}
+
+.logo {
+	width: 200px;
+	padding: 20px;
+	margin: auto auto auto 0;
+}
+//.logo_mmietapres{
+//	height:107px;
+//	width:auto;
+//}
+
+.menu{
+	list-style-type:none;
+	font-family: $police2;
+	font-size:22px;
+	color:white;
+}
+
+.menu nav{
+	display:flex;
+	justify-content:space-between;
+	margin: 0 20px auto auto;
+	//width:920px;
+	width: 100%;
+}
+
+.menu li{
+	line-height:100px;
+	letter-spacing:-0.5px;
+	word-spacing:-1px;
+	margin: 0 10px;
+}
+
+.menu li:hover{
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.presentation{
+	background-color:white;
+	margin:auto;
+	width: 70%;
+	box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom:42px;
+	padding: 20px 100px;
+}
+
+
+.presentation p{
+/*	background-color: red;
+*/	text-align:center;
+//	top:100px; pas nécessaire
+//	width:800px; J'ai plutôt mis un padding sur .presentation comme ça c'est flexible
+//	margin: auto auto 35px; Je passe ça dans _typos.scss
+}
+
+// J'ai rajouté .presentation comme ça ça s'applique juste ici
+.presentation h2 {
+	margin-bottom:30px;
+	/*Comment augmenter l'espace au dessus?*/
+	// Tu peux faire un margin-top
+}
+
+/*margin bottom negatif pour div presentation*/
+
+.boutons_inscription{
+	display:flex;
+	justify-content: space-between;
+	max-width:620px;
+	margin:auto;
+	font-family: $police2;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+
+.inscription_etudiants{
+	background-color: $couleur-logo2;
+	color: white;
+}

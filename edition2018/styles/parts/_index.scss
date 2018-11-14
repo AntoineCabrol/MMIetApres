@@ -1,0 +1,54 @@
+// main: ../global.scss
+
+/** ================================================
+               # INDEX
+================================================ **/
+
+
+.wrap1 {
+  display:flex;
+  flex-flow:column;
+  //	max-width:1250px;
+  //  C'est une technique pour avoir le background qui va jusqu'aux bords de l'écran
+  padding: 0 calc( ( 100% - 1250px ) / 2 );
+}
+
+
+
+
+
+/** ------------------------------------------------
+                tablette paysage
+------------------------------------------------ **/
+
+@media (max-width: $tablette-paysage) { }
+
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-portrait) {
+
+  // MESSAGE D'ATTENTE
+  .attente {
+    &::before { background-image: url("../images/attente/screenshot_tablet.png"); }
+    &__rebours-label { font-size: 40%; }
+  }
+
+}
+
+
+/** ------------------------------------------------
+                Mobile
+------------------------------------------------ **/
+
+@media (max-width: $mobile) {
+
+  // MESSAGE D'ATTENTE
+  .attente {
+    &::before { background-image: url("../images/attente/screenshot_mobile.png"); }
+    &__content span { display: inline; }
+  }
+
+}
