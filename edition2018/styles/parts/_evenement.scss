@@ -9,56 +9,12 @@
 	// Je met une hauteur trop petite pour faire dépasser le contenu,
 	height: 560px;
 	// et je compense avec un margin-bottom pour recréer l'espace avec la partie suivante
-	margin-bottom: 200px;
+	margin-bottom: 170px;
+	padding-top: 180px;
 	@include couleur-gradient;
 }
 
 // J'ai passé .wrap1 dans parts/_index.scss comme ça on sait qu'on s'en sert partout
-
-.logo_menu{
-	display:flex;
-	margin:13px auto auto;
-	justify-content:space-between;
-	width:100%;
-	margin-bottom:40px;
-}
-
-.logo {
-	width: 200px;
-	padding: 20px;
-	margin: auto auto auto 0;
-}
-//.logo_mmietapres{
-//	height:107px;
-//	width:auto;
-//}
-
-.menu{
-	list-style-type:none;
-	font-family: $police2;
-	font-size:22px;
-	color:white;
-}
-
-.menu nav{
-	display:flex;
-	justify-content:space-between;
-	margin: 0 20px auto auto;
-	//width:920px;
-	width: 100%;
-}
-
-.menu li{
-	line-height:100px;
-	letter-spacing:-0.5px;
-	word-spacing:-1px;
-	margin: 0 10px;
-}
-
-.menu li:hover{
-	text-decoration:underline;
-	cursor:pointer;
-}
 
 .presentation{
 	background-color:white;

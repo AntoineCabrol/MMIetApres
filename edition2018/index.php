@@ -1,7 +1,9 @@
 <?php include "includes/_head.php" ?>
 
 
-<body class="page-index page-index--attente">
+<body class="page-index">
+
+  <?php include "includes/_menu.php" ?>
 
   <?php include "includes/_evenement.php" ?>
 
