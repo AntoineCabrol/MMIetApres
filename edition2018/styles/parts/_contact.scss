@@ -60,3 +60,29 @@
   align-content: center;
   justify-content:space-between;
 }
+
+
+
+
+
+/** ------------------------------------------------
+                tablette paysage
+------------------------------------------------ **/
+
+@media (max-width: $tablette-paysage) { }
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-portrait) {
+
+   .cadre-formulaire { padding: 5px; width: auto;}
+
+}
+
+/** ------------------------------------------------
+                Mobile
+------------------------------------------------ **/
+
+@media (max-width: $mobile) { }
