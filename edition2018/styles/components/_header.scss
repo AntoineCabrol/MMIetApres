@@ -3,7 +3,49 @@
                 # HEADER
 ================================================ **/
 
-.header { }
+.logo_menu {
+	position: absolute;
+	top: 13px;
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	margin-bottom:40px;
+  padding: 0 calc( ( 100% - 1250px ) / 2);
+}
+
+.logo {
+	width: 200px;
+	padding: 20px;
+	margin: auto auto auto 0;
+}
+
+.menu {
+	list-style-type:none;
+	font-family: $police2;
+	font-size:22px;
+	color:white;
+
+  nav {
+  	display:flex;
+  	justify-content:space-between;
+  	margin: 0 20px auto auto;
+  	//width:920px;
+  	width: 100%;
+  }
+
+  li {
+  	line-height:100px;
+  	letter-spacing:-0.5px;
+  	word-spacing:-1px;
+  	margin: 0 10px;
+    &:hover {
+    	text-decoration:underline;
+    	cursor:pointer;
+    }
+  }
+
+}
+
 
 
 
