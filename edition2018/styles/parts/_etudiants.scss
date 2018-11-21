@@ -3,11 +3,16 @@
 /** ================================================
                 # ETUDIANTS
 ================================================ **/
+.etudiants{
+  margin-top: 50px;
+}
+
 .flex_temoignage{
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .temoignage_block{
@@ -17,6 +22,10 @@
   //background-color: aqua;
   height: 400px;
   width: 300px;
+}
+
+.temoignage_block:hover .temoignage_photo_fond {
+  opacity: 0.1;
 }
 
 .temoignage_photo_fond{
@@ -55,7 +64,7 @@
 }
 
 .flex_button_tem{
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   position: relative;
   flex-direction: row;

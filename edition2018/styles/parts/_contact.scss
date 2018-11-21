@@ -4,13 +4,14 @@
                 # CONTACT
 ================================================ **/
 .contact{
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: $couleur-logo1;
     padding: 1px 0;
 }
 
 .h_footer{
   color: white;
+  margin-bottom: 50px;
 }
 
 .flex_footer_global{
@@ -47,6 +48,7 @@
     justify-content: center;
     text-align: center;
     color : white;
+    margin-top: 50px;
 }
 
 .flex_depart p{
@@ -59,4 +61,9 @@
   flex-direction: row;
   align-content: center;
   justify-content:space-between;
+}
+
+.contact_mentions{
+  color : white;
+  text-align: center;
 }
