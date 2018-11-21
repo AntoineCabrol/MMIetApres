@@ -20,16 +20,19 @@
 
 .programme_gauche{
 	margin-right:200px;
-	z-index:2; //ne fonctionne pas...
 	position:relative;
   margin-bottom:150px;
 }
 
 .programme_droit{
 	margin-left:200px;
-	z-index:2; //ne fonctionne pas...
 	position:relative;
   margin-bottom:150px;
+}
+
+.contenu{
+	z-index:1;
+	position:relative;
 }
 
 #image_accueil{
@@ -38,7 +41,7 @@
 	position:absolute;
 	margin-left:100px;
 	margin-top:20px;
-	z-index:1;
+	z-index:0;
 	opacity:0.4;
 }
 
