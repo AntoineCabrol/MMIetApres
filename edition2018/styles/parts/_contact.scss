@@ -3,3 +3,60 @@
 /** ================================================
                 # CONTACT
 ================================================ **/
+.contact{
+    margin-top: 50px;
+    background-color: $couleur-logo1;
+    bottom: 0;
+}
+
+.h_footer{
+  color: white;
+}
+
+.flex_footer_global{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    color : white;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.flex_contact_gauche{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    color : white;
+}
+
+.flex_mail{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color : white;
+}
+
+.flex_depart{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color : white;
+}
+
+.flex_depart p{
+  margin-top:0;
+}
+
+.flex_img{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-content: center;
+  justify-content:space-between;
+}

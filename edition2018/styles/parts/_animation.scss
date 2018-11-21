@@ -51,11 +51,16 @@ body {
   94% {
     position: absolute;
     top: 25px;
-    left: 50px;
+    left: 0;
     width: 200px;
     height: 120px;
   }
-  95%, 100% { position: static; }
+  95%, 100% {
+    position: absolute;
+    top: 25px;
+    left: calc( ( 100% - 1250px ) / 2);
+  }
+
 }
 
 .logo_mmietapres {
