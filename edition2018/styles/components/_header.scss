@@ -3,6 +3,16 @@
                 # HEADER
 ================================================ **/
 
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+
 .logo_menu {
 	position: absolute;
 	top: 13px;
@@ -20,20 +30,15 @@
 }
 
 .menu {
-	list-style-type:none;
+  display:flex;
+  justify-content:space-between;
+  margin: 0 20px auto auto;
+  width: 100%;
 	font-family: $police2;
 	font-size:22px;
 	color:white;
 
-  nav {
-  	display:flex;
-  	justify-content:space-between;
-  	margin: 0 20px auto auto;
-  	//width:920px;
-  	width: 100%;
-  }
-
-  li {
+  label {
   	line-height:100px;
   	letter-spacing:-0.5px;
   	word-spacing:-1px;
@@ -54,7 +59,83 @@
                 tablette paysage
 ------------------------------------------------ **/
 
-@media (max-width: $tablette-paysage) { }
+@media (max-width: $tablette-paysage) {
+
+  body { overflow: hidden; }
+
+  .evenement, .programme, .entreprises, .etudiants, .contact {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: calc( 100vh - 120px );
+    padding-top: 10px;
+    overflow-x: auto;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+
+  #radio_evenement:checked ~ .evenement,
+  #radio_programme:checked ~ .programme,
+  #radio_entreprises:checked ~ .entreprises,
+  #radio_etudiants:checked ~ .etudiants,
+  #radio_contact:checked ~ .contact { opacity: 1; padding-top: 20px; }
+
+
+  .logo_menu {
+    z-index: 99;
+  	position: fixed;
+  	top: 0;
+    justify-content: normal;
+    flex-direction: column;
+  	background-color: white;
+
+    &::after {
+      z-index: 0;
+    	content: "";
+    	position: absolute;
+    	top: 30px;
+    	left: -2px;
+    	width: 110%;
+    	height: 100px;
+    	background: white;
+    	box-shadow: 0 4px 4px grey;
+    	transform: rotate(2deg);
+    }
+
+    .logo, .menu { z-index: 1; }
+
+    .logo {
+      width: 150px;
+      margin: 8px auto;
+      padding: 10px 20px;
+    }
+
+    .menu {
+      width: 520px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: black;
+      label { line-height: 1; }
+      &__inscription { display: none; }
+      &__contact {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url("../images/lieu.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+
+
+}
 
 
 /** ------------------------------------------------

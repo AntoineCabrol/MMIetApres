@@ -85,7 +85,7 @@ body {
 .logo {
   &__M1, &__M2, &__I, &__et { fill: #fff; }
   &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
-    fill: $couleur-logo2;
+    fill: $couleur-logo2--clair;
     animation-name: logoAPRES;
     animation-duration: 2s;
   }
@@ -166,3 +166,33 @@ body {
     transform: translateY(0);
   }
 }
+
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-paysage) {
+
+  .logo {
+    &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; }
+    &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
+      fill: $couleur-logo2;
+    }
+  }
+
+}
+
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-portrait) { }
+
+
+/** ------------------------------------------------
+                Mobile
+------------------------------------------------ **/
+
+@media (max-width: $mobile) { }

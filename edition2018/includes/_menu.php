@@ -1,3 +1,12 @@
+
+<input type="radio" name="sections" id="radio_evenement" />
+<input type="radio" name="sections" id="radio_programme" />
+<input type="radio" name="sections" id="radio_entreprises" />
+<input type="radio" name="sections" id="radio_etudiants" />
+<input type="radio" name="sections" id="radio_contact" />
+
+
+
 <div class="logo_menu">
   <div class="logo">
     <svg class="logo_mmietapres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.88 135.53">
@@ -18,14 +27,12 @@
     </svg>
 
   </div>
-  <ul class="menu">
-    <nav>
-      <li>Présentation</li>
-      <li>Programme</li>
-      <li>Ils seront là</li>
-      <li>Edition 2018</li>
-      <li>S'inscrire</li>
-      <li>Contact</li>
-    </nav>
-  </ul>
+  <nav class="menu">
+      <label for="radio_evenement" checked>Présentation</label>
+      <label for="radio_programme">Programme</label>
+      <label for="radio_entreprises">Ils seront là</label>
+      <label for="radio_etudiants">Edition 2018</label>
+      <label class="menu__inscription">S'inscrire</label>
+      <label class="menu__contact" for="radio_contact">Contact</label>
+  </nav>
 </div>

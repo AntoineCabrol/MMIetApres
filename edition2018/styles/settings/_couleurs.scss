@@ -7,7 +7,7 @@
 
 $couleur-logo1        : #130E7C;
 $couleur-logo2        : #CA1F3E;
-$couleur-logo2-clair  : #CA1F3E;
+$couleur-logo2--clair : #E6E6E6;
 
 @mixin couleur-gradient {
   background-color: $couleur-logo1; /* fallback color if gradients are not supported */
