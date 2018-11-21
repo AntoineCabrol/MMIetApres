@@ -63,35 +63,7 @@
   justify-content:space-between;
 }
 
-<<<<<<< HEAD
-
-
-
-
-/** ------------------------------------------------
-                tablette paysage
------------------------------------------------- **/
-
-@media (max-width: $tablette-paysage) { }
-
-/** ------------------------------------------------
-                tablette portrait
------------------------------------------------- **/
-
-@media (max-width: $tablette-portrait) {
-
-   .cadre-formulaire { padding: 5px; width: auto;}
-
-}
-
-/** ------------------------------------------------
-                Mobile
------------------------------------------------- **/
-
-@media (max-width: $mobile) { }
-=======
 .contact_mentions{
   color : white;
   text-align: center;
-} 
->>>>>>> 201e3665b5a29dc24c8d169dccbce5dc03dddad4
+}

@@ -8,3 +8,12 @@
 $tablette-paysage  : 1024px;
 $tablette-portrait : 768px;
 $mobile            : 640px;
+
+
+.deskOnly { display: block; }
+.mobileOnly { display: none; }
+
+@media (max-width: $tablette-paysage) {
+  .deskOnly { display: none; }
+  .mobileOnly { display: block; }
+}
