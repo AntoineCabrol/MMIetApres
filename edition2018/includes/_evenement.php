@@ -4,10 +4,10 @@
 
 	<div class="presentation">
 		<h1>L'événement</h1>
-		<p>MMI&APRES est l'événement qui réunit étudiants et professionnels.</p>
-		<p>Chers professionnels, n'attendez plus et venez rencontrer les étudiants le 17 Janvier 2019 à l'IUT de Chambéry à partir de 8h30.</p>
-		<p>Un petit déjeuner conivival, une matinée  de stage dating, des tables rondes et beaucoup d'autres surprises vous attendent.</p>
-		<p>C'est l'occasion rêvée de faire des rencontres et de décrocher un stagiaire.</p>
+		<p>MMI&APRÈS est un événement qui permet une rencontre entre étudiants et professionnels.</p>
+		<p>Les professionnels peuvent découvrir la formation MMI et rencontrer d’autres entreprises. </p>
+		<p>Les étudiants, quant à eux, passent des entretiens pour trouver un stage de fin d’année. </p>
+		<p>Les tables rondes permettront aux professionnels tout comme aux étudiants de s’exprimer sur un sujet en rapport avec la formation MMI !</p>
 
 		<h2>Inscription</h2>
 		<div class="boutons_inscription">
