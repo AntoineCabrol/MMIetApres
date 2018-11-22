@@ -67,3 +67,139 @@
 #image_tables_rondes{
 	margin-left:130px;
 }
+
+
+
+
+
+
+
+/** ------------------------------------------------
+                tablette paysage
+------------------------------------------------ **/
+
+@media (max-width: $tablette-paysage) {
+
+	#popDetails:checked ~ .programme {
+		z-index: 2;
+		background: transparent;
+		.programme__date, .programme__event:not(#stage_dating) { display: none; }
+		.programme__event {
+			margin: 80px 20px auto;
+			label {
+				transform: rotate(45deg);
+				background-size: 20px;
+			}
+		}
+		.contenu--sup {
+			display: flex;
+			flex-flow: column;
+			opacity: 1;
+			margin-top: 20px;
+			.bouton {
+				margin-top: 50px;
+				border-color: white;
+				color: white;
+			}
+		}
+	}
+
+	.programme {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		max-width: none;
+    padding-bottom: 80px;
+		background-color: $couleur-fond;
+
+		p.programme__date {
+			width: 100%;
+			margin: 50px auto 30px;
+			color: $couleur-logo2;
+			text-transform: uppercase;
+			font: $police-texte;
+		}
+
+		&__event {
+			flex: 1;
+			margin: 10px 20px;
+			min-width: 270px;
+			max-width: 300px;
+			.image_programme { display: none; }
+
+			.contenu {
+				display: flex;
+				flex-flow: wrap;
+				padding: 20px;
+				background-color: white;
+				box-shadow: 0 0 10px grey;
+				&--sup {
+					display: none;
+					opacity: 0;
+					margin-top: 20px;
+					color: white;
+					p {
+						width: 100%;
+						text-align: left;
+						font-size: 14px;
+					}
+				}
+			}
+			&-date {
+				order: 2;
+				width: 45%;
+				margin: auto;
+				text-align: right;
+				font-size: 20px;
+				font-weight: 300;
+				font-family: $police2;
+			}
+			&-titre {
+				order: 1;
+				width: 55%;
+				margin: auto;
+				font: $police-texte;
+				font-weight: bold;
+				text-align: left;
+				color: $couleur-texte;
+				padding-right: 10px;
+			}
+			&-description { display: none; }
+			p.programme__event-description--mobile {
+				order: 3;
+				width: 55%;
+				margin: 0 auto 0 0;
+				font: $police-texte;
+				font-size: 14px;
+				text-align: left;
+			}
+			label {
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+				width: 30px;
+				height: 30px;
+				background-image: url("../images/+.svg");
+				background-size: 15px;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+
+	}
+
+}
+
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-portrait) { }
+
+
+/** ------------------------------------------------
+                Mobile
+------------------------------------------------ **/
+
+@media (max-width: $mobile) { }

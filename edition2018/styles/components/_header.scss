@@ -4,7 +4,7 @@
 ================================================ **/
 
 
-input[type="radio"] {
+input[type="radio"], #popDetails {
   position: absolute;
   opacity: 0;
   width: 0;
@@ -63,12 +63,12 @@ input[type="radio"] {
   body { overflow: hidden; }
 
   .evenement, .programme, .entreprises, .etudiants, .contact {
+    z-index: 0;
     position: absolute;
-    top: 120px;
     left: 0;
     width: 100vw;
-    height: calc( 100vh - 120px );
-    padding-top: 10px;
+    height: 100vh;
+    padding-top: 100px;
     overflow-x: auto;
     opacity: 0;
     transition: all 0.2s ease;
@@ -77,7 +77,7 @@ input[type="radio"] {
   #radio_evenement:checked ~ .evenement,
   #radio_programme:checked ~ .programme,
   #radio_entreprises:checked ~ .entreprises,
-  #radio_etudiants:checked ~ .etudiants { opacity: 1; padding-top: 20px; }
+  #radio_etudiants:checked ~ .etudiants { z-index: 1; opacity: 1; padding-top: 115px; }
 
   #radio_contact:checked {
     & ~ .logo_menu {

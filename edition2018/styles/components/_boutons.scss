@@ -19,6 +19,7 @@
 	border-radius:5px;
   line-height: 70px;
   text-align: center;
+	transition: letter-spacing 0.2s;
 }
 
 .bouton:hover{
@@ -31,7 +32,18 @@
                 tablette paysage
 ------------------------------------------------ **/
 
-@media (max-width: $tablette-paysage) { }
+@media (max-width: $tablette-paysage) {
+
+	.bouton {
+		width: 100%;
+		max-width: 190px;
+		margin: auto;
+		line-height: 50px;
+		border-radius: 0px;
+		border-width: 4px;
+	}
+
+}
 
 /** ------------------------------------------------
                 tablette portrait

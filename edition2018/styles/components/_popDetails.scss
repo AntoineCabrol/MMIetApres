@@ -1,0 +1,38 @@
+// main: ../global.scss
+/** ================================================
+                # POP DETAILS
+================================================ **/
+
+
+#popDetails + .popDetails {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  &::before {
+    z-index: 0;
+    content: "";
+    position: fixed;
+    bottom: -72px;
+    left: -2px;
+    width: 110%;
+    height: 100px;
+    background-color: $couleur-logo2;
+    box-shadow: 0 -1px 4px grey;
+    transform: rotate(-5deg);
+    transition: all 0.2s;
+  }
+}
+
+
+#popDetails:checked + .popDetails {
+  height: 100vh;
+  &::before {
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    transform: rotate(0deg);
+  }
+}
