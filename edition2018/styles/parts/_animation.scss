@@ -64,9 +64,11 @@ body {
 }
 
 .logo_mmietapres {
+  width: 100%;
+  height: 100%;
+  margin: auto;
   animation-name: splashScreenDesk--logo;
   animation-duration: 4s;
-  margin: auto;
 }
 @keyframes splashScreenDesk--logo {
   0%, 94% {
