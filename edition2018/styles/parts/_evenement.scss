@@ -66,7 +66,11 @@ text-align:center;
                 tablette paysage
 ------------------------------------------------ **/
 
-@media (max-width: $tablette-paysage) { }
+@media (max-width: $tablette-paysage) {
+	h1{
+		display:none;
+	}
+}
 
 /** ------------------------------------------------
                 tablette portrait
@@ -78,4 +82,6 @@ text-align:center;
                 Mobile
 ------------------------------------------------ **/
 
-@media (max-width: $mobile) { }
+@media (max-width: $mobile) {
+
+}

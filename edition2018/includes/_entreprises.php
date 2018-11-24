@@ -1,6 +1,6 @@
 <section class="entreprises">
 
-  <h1>Il seront là</h1>
+  <h1>Ils seront là</h1>
 
   <div class="slider">
     <div>

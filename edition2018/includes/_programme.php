@@ -1,7 +1,7 @@
 <section class="programme">
 
 		<h1 class="deskOnly">Programme</h1>
-		<p class="mobOnly programme__date">Jeudi 12 Janvier</p>
+		<p class="mobOnly programme__date">Jeudi 17 Janvier</p>
 
 		<div class="programme__event programme_gauche" id="accueil">
 			<img class="image_programme" id="image_accueil" src="images/accueil.svg">
