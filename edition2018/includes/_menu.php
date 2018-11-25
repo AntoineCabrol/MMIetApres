@@ -44,4 +44,5 @@
     <label class="menu__contact" for="radio_contact">Contact</label>
   </nav>
   <label class="mobileOnly menu__contact--fermer" for="radio_evenement"></label>
+  <label class="popDetails-label" for="popDetails"></label>
 </div>

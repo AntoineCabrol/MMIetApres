@@ -4,68 +4,49 @@
                 # PROGRAMME
 ================================================ **/
 
-.programme{
-	max-width:660px;
-	margin:auto;
-	background-color:white;
-}
+.programme {
+	max-width: 660px;
+	margin: auto;
+	background-color: white;
 
-.programme h1{
-	margin-bottom:75px;
-}
+	h1 { margin-bottom: 75px; }
 
-.programme p{
-	font-family:Roboto;
-	font-size:18px;
-	text-align:center;
-	width:290px;
-	margin:auto;
-}
+	p {
+		font-family: $police2;
+		font-size: 18px;
+		text-align: center;
+		width: 290px;
+		margin: auto;
+	}
 
-.programme_gauche{
-	margin-right:200px;
-	position:relative;
-  margin-bottom:150px;
-}
+	&__event {
+		position: relative;
+		margin-bottom: 150px;
+		// Pour remplacer les class "gauche" et "droite" :)
+		&:nth-child(odd) { margin-right: 200px; } // 1 sur 2 impair
+		&:nth-child(even) { margin-left: 200px; } // 1 sur 2 pair
+	}
 
-.programme_droit{
-	margin-left:200px;
-	position:relative;
-  margin-bottom:150px;
-}
+	.contenu {
+		z-index: 1;
+		position: relative;
+	}
 
-.contenu{
-	z-index:1;
-	position:relative;
-}
+	.image_programme {
+		width: 200px;
+		height: auto;
+		position: absolute;
+		margin-top: 20px;
+		z-index: 0;
+		opacity: 0.3;
+	}
 
-.image_programme{
-	width:200px;
-	height:auto;
-	position:absolute;
-	margin-top:20px;
-	z-index:0;
-	opacity:0.3;
-}
+	#image_accueil { margin-left: 100px; }
+	#image_presentation_dut { margin-left: 120px; }
+	#image_stage_dating { margin-left: 130px; }
+	#image_buffet { margin-left: 130px; }
+	#image_tables_rondes { margin-left: 130px; }
 
-#image_accueil{
-	margin-left:100px;
-}
-
-#image_presentation_dut{
-	margin-left:120px;
-}
-
-#image_stage_dating{
-	margin-left:130px;
-}
-
-#image_buffet{
-	margin-left:130px;
-}
-
-#image_tables_rondes{
-	margin-left:130px;
 }
 
 
@@ -86,7 +67,7 @@
 		.programme__date, .programme__event:not(#stage_dating) { display: none; }
 		.programme__event {
 			margin: 80px 20px auto;
-			label {
+			&-plus {
 				transform: rotate(45deg);
 				background-size: 20px;
 			}
@@ -122,9 +103,9 @@
 
 		&__event {
 			flex: 1;
-			margin: 10px 20px;
 			min-width: 270px;
 			max-width: 300px;
+			&:nth-child(odd), &:nth-child(even) { margin: 10px 20px; }
 			.image_programme { display: none; }
 
 			.contenu {
@@ -173,7 +154,7 @@
 				font-size: 14px;
 				text-align: left;
 			}
-			label {
+			&-plus {
 				position: absolute;
 				bottom: 10px;
 				right: 20px;
