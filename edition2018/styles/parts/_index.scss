@@ -21,34 +21,22 @@
                 tablette paysage
 ------------------------------------------------ **/
 
-@media (max-width: $tablette-paysage) { }
+@media (max-width: $tablette-paysage) {
+
+  body { background-color: $couleur-fond-mobile; }
+
+}
 
 
 /** ------------------------------------------------
                 tablette portrait
 ------------------------------------------------ **/
 
-@media (max-width: $tablette-portrait) {
-
-  // MESSAGE D'ATTENTE
-  .attente {
-    &::before { background-image: url("../images/attente/screenshot_tablet.png"); }
-    &__rebours-label { font-size: 40%; }
-  }
-
-}
+@media (max-width: $tablette-portrait) { }
 
 
 /** ------------------------------------------------
                 Mobile
 ------------------------------------------------ **/
 
-@media (max-width: $mobile) {
-
-  // MESSAGE D'ATTENTE
-  .attente {
-    &::before { background-image: url("../images/attente/screenshot_mobile.png"); }
-    &__content span { display: inline; }
-  }
-
-}
+@media (max-width: $mobile) { }

@@ -65,6 +65,7 @@ input[type="radio"], #popDetails {
   .evenement, .programme, .entreprises, .etudiants, .contact {
     z-index: 0;
     position: absolute;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -79,23 +80,28 @@ input[type="radio"], #popDetails {
   #radio_entreprises:checked ~ .entreprises,
   #radio_etudiants:checked ~ .etudiants { z-index: 1; opacity: 1; padding-top: 115px; }
 
-  #radio_contact:checked {
-    & ~ .logo_menu {
-      &::after { top: -10px; @include couleur-gradient;}
-      .menu { display: none; }
-      .menu__contact--fermer {
-        right: 40px;
-        opacity: 1;
-      }
-      .logo__M1, .logo__M2, .logo__I, .logo__et { fill: white; }
-      .logo__A, .logo__P, .logo__R, .logo__E, .logo__accent, .logo__S, .logo__question {
-      	fill: $couleur-logo2--clair;
-      }
+  #radio_contact:checked ~ .logo_menu {
+    &::after { top: -10px; @include couleur-gradient;}
+    .menu { display: none; }
+    .menu__contact--fermer {
+      right: 40px;
+      opacity: 1;
+    }
+    .logo__M1, .logo__M2, .logo__I, .logo__et { fill: white; }
+    .logo__A, .logo__P, .logo__R, .logo__E, .logo__accent, .logo__S, .logo__question {
+    	fill: $couleur-logo2--clair;
     }
     & ~ .contact { opacity: 1; }
-
   }
 
+  .logo_menu.focused {
+    &::after { top: -10px; }
+    .menu { display: none; }
+    .menu__contact--fermer {
+      right: 40px;
+      opacity: 1;
+    }
+  }
 
   .logo_menu {
     z-index: 99;
