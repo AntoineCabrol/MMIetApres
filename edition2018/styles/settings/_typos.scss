@@ -65,7 +65,12 @@ p {
                   tablette paysage
   ------------------------------------------------ **/
 
-  @media (max-width: $tablette-paysage) { }
+  @media (max-width: $tablette-paysage) {
+
+		$police-texte    : 300 18px $police2;
+		p { font: $police-texte; }
+
+	}
 
   /** ------------------------------------------------
                   tablette portrait

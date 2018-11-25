@@ -67,21 +67,29 @@ text-align:center;
 ------------------------------------------------ **/
 
 @media (max-width: $tablette-paysage) {
-	.deskOnly{
-		display:none; //boutons et h1 disparu !
+
+	//.deskOnly{} La class est déjà définie dans _typo.scss :)
+
+	.evenement {
+		height: auto;
+		background: none; // voilà pour enlever le dégradé
+		margin-bottom: 0;
+		background-color: $couleur-fond-mobile;
+
+		.presentation {
+			width: 90%;
+			max-width: 380px;
+			margin: 60px auto auto;
+			padding: 0;
+			background: none;
+			box-shadow: none;
+
+			p { text-align: left; }
+
+		}
+
 	}
 
-	.presentation{
-		background-color: grey;
-		width:100%;
-		margin:0px;
-	}
-
-	.evenement{
-		background-color: grey;
-	}
-
-	//malgré tous mes effort impossible de faire disparaitre le dégradé...
 }
 
 /** ------------------------------------------------
