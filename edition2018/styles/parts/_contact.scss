@@ -67,3 +67,36 @@
   color : white;
   text-align: center;
 }
+
+
+/** ------------------------------------------------
+                tablette paysage
+------------------------------------------------ **/
+
+@media (max-width: $tablette-paysage) {
+  .contact{
+    background-color: white;
+  }
+
+  .flex_depart{
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      color : white;
+  }
+}
+
+
+/** ------------------------------------------------
+                tablette portrait
+------------------------------------------------ **/
+
+@media (max-width: $tablette-portrait) { }
+
+/** ------------------------------------------------
+                Mobile
+------------------------------------------------ **/
+
+@media (max-width: $mobile) {
+
+}
