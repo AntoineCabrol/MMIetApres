@@ -15,8 +15,6 @@
 
   <?php include "includes/_contact.php" ?>
 
-
-
 </body>
 
 

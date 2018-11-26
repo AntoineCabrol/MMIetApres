@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
   <link rel="stylesheet" href="styles/global.min.css" />
   <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#130E7C"/>
   <link rel="icon" href="images/favicon.ico" />
   <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
