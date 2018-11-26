@@ -91,18 +91,44 @@
 @media (max-width: $tablette-paysage) {
 
   .contact {
-    background-color: transparent;
+    margin-top: 0;
+    padding-top: 115px;
+    background-color: white;
 
     .flex_footer_global {
-      flex-direction: column!important;
+      display: flex;
+      flex-direction: column;
+      margin: 10px auto;
+      color: $couleur-texte;
+
+      .flex_coordonnees, .flex_depart, .flex_img {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .flex_coordonnees { order: 4;}
+
+      .flex_depart {
+        order: 1;
+        margin-bottom: 20px;
+        p { margin: 0; }
+      }
+
+      .flex_img { order: 5; }
+
+      .googlemaps {
+        order: 2;
+        height: 250px;
+        margin: 0 auto;
+      }
+      .bouton {
+        order: 3;
+        transform: translateY(-20px);
+        color: $couleur-logo2;
+      }
+
     }
 
-    .flex_depart {
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        color : white;
-    }
 
   }
 
