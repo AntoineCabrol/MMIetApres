@@ -41,7 +41,7 @@ input[type="radio"], #popDetails {
   	line-height:100px;
   	letter-spacing:-0.5px;
   	word-spacing:-1px;
-  	margin: 0 10px;
+  	margin: auto 10px;
     &:hover {
     	text-decoration:underline;
     	cursor:pointer;
@@ -129,13 +129,13 @@ input[type="radio"], #popDetails {
 
     .logo {
       width: 150px;
-      margin: 8px auto;
-      padding: 10px 20px;
+      margin: 8px auto 0;
+      padding: 10px 20px 5px;
     }
 
     .menu {
       max-width: 100vw;
-      height: 20px;
+      height: 50px;
       margin: 0 auto;
       font-size: 18px;
       color: black;
