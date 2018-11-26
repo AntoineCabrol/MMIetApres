@@ -170,34 +170,75 @@ body {
 }
 
 
+
+
 /** ------------------------------------------------
                 tablette portrait
 ------------------------------------------------ **/
 
 @media (max-width: $tablette-paysage) {
 
-
-
-  body { animation-name: none; }
-  .menu, .presentation { animation-name: none; }
+  body { animation: none; }
+  .menu, .presentation { animation: none; }
 
   .logo {
-    animation-name: none;
-    &__M1, &__M2, &__I, &__et {
-      fill: $couleur-logo1;
-      animation-name: none;
-    }
+    animation-name: splashScreenMob--logo;
+    animation-duration: 2s;
+    &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; animation: none; }
     &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
       fill: $couleur-logo2;
-      animation-name: none;
+      animation: none;
     }
+  }
+  @keyframes splashScreenMob--logo {
+    0%, 80% {
+      z-index: 100;
+    	position: fixed;
+    	width: 250px;
+    	left: calc( 50% - 125px );
+    	height: 100vh;
+    	margin: 0;
+      opacity: 1;
+    }
+    85% {
+      z-index: 100;
+      position: fixed;
+      width: 250px;
+      opacity: 0;
+    }
+    95% {
+      z-index: 1;
+      position: static;
+      width: 150px;
+    	height: auto;
+      opacity: 0;
+    }
+  }
+
+  .logo_menu::before {
+    content: "";
+    z-index: 99;
+    animation-name: splashScreenMob--fond;
+    animation-duration: 2s;
+  }
+  @keyframes splashScreenMob--fond {
+    0%, 95% {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: white;
+      opacity: 1;
+    }
+    100% { opacity: 0; }
   }
 
   .logo_mmietapres {
     width: 100%;
     height: 100%;
     margin: auto;
-    animation-name: none;
+    animation: none;
   }
 
 }
