@@ -38,19 +38,21 @@ $(".entreprise").click(function() {
   var elem = $(this);
   var elemPosition = elem.position().left;
 
-  var slider = $('.slider');
+  var slider = $('.sliderMob');
   slider.scrollLeft( elemPosition );
 
+  var parent = slider.parent();
+
   if (elem.hasClass("focused")) {
-    $(".entreprise").removeClass("focused");
+    $(".sliderMob__elem").removeClass("focused");
     slider.removeClass("focused");
-    $(".entreprises").removeClass("focused");
+    parent.removeClass("focused");
     $(".logo_menu").removeClass("focused");
   } else {
-    $(".entreprise").removeClass("focused");
+    $(".sliderMob__elem").removeClass("focused");
     $(this).addClass("focused");
     slider.addClass("focused");
-    $(".entreprises").addClass("focused");
+    parent.addClass("focused");
     $(".logo_menu").addClass("focused");
   }
 

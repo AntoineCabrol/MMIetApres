@@ -1,0 +1,85 @@
+// main: ../global.scss
+
+/** ================================================
+            # SLIDERS Mobile
+              Entreprises & Etudiants
+================================================ **/
+
+
+@media (max-width: $tablette-paysage) {
+
+  .entreprises, .etudiants {
+    padding: 0 calc( ( 100% - 480px ) / 2);
+    &.focused .intro {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    &.focused .sliderMob .sliderMob__elem:not(.focused) {
+      opacity: 0.1;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    .intro {
+      display: block;
+      margin: 70px 30px 30px;
+    }
+
+    .sliderMob {
+      position: absolute;
+      right: 0;
+    	display: flex;
+    	width: 100%;
+    	height: auto;
+    	padding: 0 30%;
+    	direction: rtl;
+      overflow: auto hidden;
+      transition: all 0.2s;
+      &.focused {
+        overflow: visible;
+        justify-content: center;
+      }
+      &__elem {
+        display: flex;
+        width: 140px;
+        margin: 0 10px;
+        transition: height 0.4s, top 0.4s;
+        &.focused {
+        	z-index: 1;
+        	position: absolute;
+          top: -50px;
+        	left: 0;
+          flex-direction: column;
+        	width: 100%;
+        	margin: 0;
+          .sliderMob__logo { width: 220px; }
+          .sliderMob__texte {
+          	opacity: 1;
+          	width: 90%;
+            height: 100%;
+          	max-width: 320px;
+          	margin: 30px auto;
+            direction: ltr;
+            pointer-events: all;
+            transition: opacity 0.2s;
+          }
+        }
+      }
+      &__logo {
+        width: 140px;
+        margin: auto;
+        transition: width 0.2s;
+      }
+      &__texte {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+
+  }
+
+}
