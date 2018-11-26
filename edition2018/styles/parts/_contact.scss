@@ -3,70 +3,85 @@
 /** ================================================
                 # CONTACT
 ================================================ **/
-.contact{
-    margin-top: 100px;
-    background-color: $couleur-logo1;
-    padding: 1px 0;
-}
 
-.h_footer{
+.contact {
+  margin-top: 100px;
+  background-color: $couleur-logo1;
+  padding: 1px 0;
   color: white;
-  margin-bottom: 50px;
-}
 
-.flex_footer_global{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-    color : white;
-    max-width: 900px;
-    margin: 30px auto;
-}
+  .h_footer {
+    color: white;
+    margin-bottom: 50px;
+  }
 
-.flex_contact_gauche{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    color : white;
-}
+  .flex_footer_global {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	max-width: 1000px;
+  	margin: 30px auto;
 
-.flex_mail{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    .flex_coordonnees, .flex_depart, .flex_img {
+      grid-column: 1/2;
+      display: flex;
+      align-content: center;
+      width: 80%;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .flex_coordonnees {
+      grid-row: 1/2;
+      flex-direction: column;
+      justify-content: center;
+      p { margin: 5px 0; }
+      .icone_facebook {
+        width: 25px;
+        margin: 5px auto;
+      }
+    }
+
+    .flex_depart {
+      grid-row: 2/3;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      p { margin-top: 0; }
+      p:last-of-type { margin-bottom: 5px; }
+    }
+
+    .flex_img {
+      grid-row: 3/4;
+      position: relative;
+      flex-direction: row;
+      justify-content: center;
+      .emetteur {
+        height: 50px;
+        margin: 0 5px;
+      }
+    }
+
+    .googlemaps {
+      grid-column: 2/3;
+      grid-row: 1/4;
+      width: 90%;
+      height: 280px;
+      margin: auto 0 auto auto;
+      border: none;
+    }
+
+  }
+
+
+
+  .contact_mentions {
+    color: white;
     text-align: center;
-    color : white;
+  }
+
 }
 
-.flex_depart{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    color : white;
-    margin-top: 50px;
-}
-
-.flex_depart p{
-  margin-top:0;
-}
-
-.flex_img{
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-content: center;
-  justify-content:space-between;
-}
-
-.contact_mentions{
-  color : white;
-  text-align: center;
-}
 
 
 /** ------------------------------------------------
@@ -74,16 +89,24 @@
 ------------------------------------------------ **/
 
 @media (max-width: $tablette-paysage) {
-  .contact{
-    background-color: white;
+
+  .contact {
+    background-color: transparent;
+
+    .flex_footer_global {
+      flex-direction: column!important;
+    }
+
+    .flex_depart {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        color : white;
+    }
+
   }
 
-  .flex_depart{
-      align-content: center;
-      justify-content: center;
-      text-align: center;
-      color : white;
-  }
+
 }
 
 
