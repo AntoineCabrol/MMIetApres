@@ -16,7 +16,7 @@
       pointer-events: none;
     }
     &.focused .sliderMob .sliderMob__elem:not(.focused) {
-      opacity: 0.1;
+      opacity: 0;
       pointer-events: none;
       transition: opacity 0.2s;
     }
