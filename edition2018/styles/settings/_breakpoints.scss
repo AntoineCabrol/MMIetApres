@@ -11,9 +11,9 @@ $mobile            : 640px;
 
 
 .deskOnly { display: block; }
-.mobileOnly { display: none; }
+.mobileOnly { display: none!important; }
 
 @media (max-width: $tablette-paysage) {
-  .deskOnly { display: none; }
-  .mobileOnly { display: block; }
+  .deskOnly { display: none!important; }
+  .mobileOnly { display: block!important; }
 }

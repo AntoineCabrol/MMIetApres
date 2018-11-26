@@ -33,7 +33,7 @@ $('.slider').slick({
 //
 //////////////////////////////////////////////////
 
-$(".entreprise").click(function() {
+$(".sliderMob__elem").click(function() {
 
   var elem = $(this);
   var elemPosition = elem.position().left;
