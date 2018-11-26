@@ -176,11 +176,28 @@ body {
 
 @media (max-width: $tablette-paysage) {
 
+
+
+  body { animation-name: none; }
+  .menu, .presentation { animation-name: none; }
+
   .logo {
-    &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; }
+    animation-name: none;
+    &__M1, &__M2, &__I, &__et {
+      fill: $couleur-logo1;
+      animation-name: none;
+    }
     &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
       fill: $couleur-logo2;
+      animation-name: none;
     }
+  }
+
+  .logo_mmietapres {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    animation-name: none;
   }
 
 }
