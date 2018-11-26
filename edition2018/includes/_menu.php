@@ -1,5 +1,5 @@
 
-<input type="radio" name="sections" id="radio_evenement" />
+<input type="radio" name="sections" id="radio_evenement" checked/>
 <input type="radio" name="sections" id="radio_programme" />
 <input type="radio" name="sections" id="radio_entreprises" />
 <input type="radio" name="sections" id="radio_etudiants" />
