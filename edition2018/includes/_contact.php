@@ -6,7 +6,9 @@
       <div class="flex_coordonnees">
         <p class="mail">mmietapres_iutchambery@gmail.com</p>
         <p class="telephone">06 00 00 00 00</p>
-        <div class="icone_facebook"><img src="images/icone_facebook.png" width="100%"/></div>
+        <div class="icone_facebook">
+          <img src="images/icone_facebook.png" width="100%"/>
+        </div>
       </div>
       <div class="flex_depart">
           <p>Département MMI</p>
@@ -16,13 +18,13 @@
       </div>
       <div class="flex_img">
         <div class="emetteur">
-          <img src="../images/mmi.png" height="100%"/>
+          <img src="images/mmi.png" height="100%"/>
         </div>
         <div class="emetteur">
-          <img src="../images/neon.svg" height="100%"/>
+          <img src="images/neon.svg" height="100%"/>
         </div>
         <div class="emetteur">
-          <img src="../images/iut.png" height="100%"/>
+          <img src="images/iut.png" height="100%"/>
         </div>
       </div>
       <iframe class="googlemaps"
