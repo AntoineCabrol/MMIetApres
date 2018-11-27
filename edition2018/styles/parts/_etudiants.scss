@@ -30,6 +30,7 @@
       height: 400px;
       width: 300px;
       &:hover .temoignage_photo_fond { opacity: 0.1; }
+      &:hover .barre_couleur { height: 12px;}
     }
 
     &_photo_fond{
@@ -41,6 +42,7 @@
       height: 100%;
       background-image: url("../images/photo_tem.jpg");
       background-size: cover;
+      transition:opacity 0.3s ease;
       opacity : 0.3;
     }
 
@@ -49,6 +51,7 @@
       position: relative;
       flex-direction: column;
       align-content: center;
+      padding-top: 15px;
       padding-left: 10px;
       padding-right: 10px;
       z-index: 1;
@@ -60,12 +63,38 @@
       width: 50px;
       margin-left: auto;
       margin-right: auto;
+      z-index: 2;
     }
 
     &_texte{
       display: block;
       position: relative;
     }
+  }
+
+  .barre_couleur{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    z-index: 3;
+    background-color: black;
+    transition:height 0.3s ease;
+    }
+
+  .barre_couleur[data-color="bleu"]{
+      background-color: #333399;
+  }
+  .barre_couleur[data-color="vert"]{
+      background-color: #009933;
+  }
+  .barre_couleur[data-color="magenta"]{
+      background-color: #cc0099;
+  }
+  .barre_couleur[data-color="orange"]{
+      background-color: #ff9900;
   }
 
   .flex_button_tem{
