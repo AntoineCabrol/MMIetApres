@@ -12,6 +12,7 @@ self.addEventListener('fetch', async event => {
 });
 
 
+/**
 const cacheName = 'pwa-MMIetApres';
 const staticAssets = [
   '/',
@@ -29,3 +30,4 @@ async function cacheFirst(req) {
   const cachedResponse = await cache.match(req); // (2)
   return cachedResponse || fetch(req); // (3)
 }
+**/
