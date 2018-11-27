@@ -1,0 +1,52 @@
+// main: ../global.scss
+
+/** ================================================
+                # &VOUS &TOI
+================================================ **/
+
+
+@media (max-width: $tablette-paysage) {
+
+  .etPart {
+    width: 80%;
+    max-width: 420px;
+    margin: 180px auto 20px;
+
+    &__icone { height: 140px; }
+
+    &__texte {
+      display: grid;
+      margin-left: 10%;
+      margin-top: -50px;
+
+      &-venir {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin-right: 10px;
+        text-align: right;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 28px;
+        color: $couleur-logo2;
+      }
+
+      &-phrase {
+        grid-column: 2/3;
+        display: block;
+        width: 100%;
+        margin: 5px auto;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 18px;
+        &--1 { grid-row: 1/2; opacity: 0.2; }
+        &--2 { grid-row: 2/3; opacity: 0.6; }
+        &--3 { grid-row: 3/4; color: $couleur-logo2; }
+        &--4 { grid-row: 4/5; opacity: 0.6; }
+      }
+
+    }
+
+  }
+
+}
