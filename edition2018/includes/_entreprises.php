@@ -7,7 +7,7 @@
   <div class="slider sliderMob">
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/vas_y_paulette.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -17,7 +17,7 @@
     </div>
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/agence_en_ville.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -27,7 +27,7 @@
     </div>
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/new_quest.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         Lorem ipsum dolor sit amet, consectetur adipisicing

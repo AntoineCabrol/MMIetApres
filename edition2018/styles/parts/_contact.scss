@@ -106,7 +106,9 @@
         margin: 0 auto;
       }
 
-      .flex_coordonnees { order: 4;}
+      .flex_coordonnees {
+        order: 4;
+      }
 
       .flex_depart {
         order: 1;
@@ -127,7 +129,33 @@
         color: $couleur-logo2;
       }
 
-    }
+      h5{
+        order: 3;
+      }
+
+      .agence{
+        font-family:Montserrat;
+      	font-size:16px;
+      	font-weight:bold;
+      	text-align:center;
+        margin-bottom:30px;
+      }
+
+      .telephone{
+        margin-bottom:30px;
+      }
+
+      .flex_img{
+        display:none;
+      }
+}
+      .contact_mentions{
+        color: black;
+        font-size:14px;
+        font-weight:bold;
+      }
+
+
 
 
   }
