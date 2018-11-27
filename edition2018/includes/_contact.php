@@ -4,9 +4,10 @@
 
   <div class="flex_footer_global">
       <div class="flex_coordonnees">
-        <p class="mail">mmietapres_iutchambery@gmail.com</p>
+        <p class="mobileOnly agence">L'agence Néon</p>
+        <p class="mail">contactmmietapres@gmail.com</p>
         <p class="telephone">06 00 00 00 00</p>
-        <div class="icone_facebook">
+        <div class="icone_facebook deskOnly">
           <img src="images/icone_facebook.png" width="100%"/>
         </div>
       </div>
@@ -31,6 +32,7 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2789.4158911757763!2d5.868904015823816!3d45.6424692295509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b09cbb2276115%3A0x3d15d003b27c5cce!2sIUT+de+Chamb%C3%A9ry!5e0!3m2!1sfr!2sfr!4v1542229141830"
               frameborder="0" allowfullscreen></iframe>
       <a class="mobileOnly bouton" href="#" target="_blank">Itinéraire</a>
+      <h5 class="mobileOnly">Contact</h5>
   </div>
 
   <p class="contact_mentions">©2018 - <a href="mentions.php">Mentions Légales</a></p>
