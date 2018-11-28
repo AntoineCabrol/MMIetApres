@@ -80,6 +80,8 @@
     text-align: center;
   }
 
+  .mentions { display: none; } //include pour mobile
+
 }
 
 
@@ -90,9 +92,22 @@
 
 @media (max-width: $tablette-paysage) {
 
+
+  #popDetails:checked ~ .contact {
+		z-index: 2;
+		background: transparent;
+		.flex_footer_global, label { display: none; }
+		.mentions {
+			height: auto;
+      opacity: 1;
+		}
+	}
+
   .contact {
     margin-top: 0;
     padding-top: 115px;
+    padding-bottom: 80px;
+    color: black;
     background-color: white;
 
     .flex_footer_global {
@@ -149,14 +164,42 @@
       .flex_img{
         display:none;
       }
-}
-      .contact_mentions{
-        color: black;
-        font-size:14px;
-        font-weight:bold;
+    }
+
+    .contact_mentions{
+      font-size:14px;
+      font-weight:bold;
+    }
+
+    label {
+      font-family: $police1;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        margin-left: 10px;
+        background-image: url("../images/+.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
-
-
+    }
+    .mentions {
+      display: block;
+      width: 90%;
+      height: 0;
+      max-width: 420px;
+      margin: 10px auto;
+      opacity: 0;
+      color: white;
+      overflow: hidden;
+      transition: opacity 1s;
+    }
 
 
   }

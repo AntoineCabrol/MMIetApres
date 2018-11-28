@@ -37,6 +37,15 @@
   }
 }
 
+#popDetails:checked ~ .logo_menu::after { background: white!important; }
+
+#popDetails:checked ~ .logo_menu .logo {
+  &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; }
+  &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
+    fill: $couleur-logo2;
+  }
+}
+
 #popDetails ~ .logo_menu .popDetails-label {
   z-index: 1;
   position: absolute;
@@ -52,5 +61,11 @@
 #popDetails:checked ~ .logo_menu .popDetails-label {
   pointer-events: all;
   height: 100%;
+}
+#radio_programme:checked ~ #popDetails:checked ~ .logo_menu .popDetails-label {
   opacity: 0.8;
+}
+#radio_contact:checked ~ #popDetails:checked ~ .logo_menu .popDetails-label {
+  height: 100px;
+  opacity: 0;
 }

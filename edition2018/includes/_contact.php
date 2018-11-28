@@ -35,6 +35,9 @@
       <h5 class="mobileOnly">Contact</h5>
   </div>
 
-  <p class="contact_mentions">©2018 - <a href="mentions.php">Mentions Légales</a></p>
+  <p class="deskOnly contact_mentions">©2018 - <a href="mentions.php">Mentions Légales</a></p>
+
+  <label class="mobileOnly" for="popDetails">Mentions légales</label>
+  <?php include "_mentions.php" ?>
 
 </footer>
