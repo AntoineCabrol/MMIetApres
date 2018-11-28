@@ -89,7 +89,7 @@ body {
   &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
     fill: $couleur-logo2--clair;
     animation-name: logoAPRES;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
 }
 
@@ -111,7 +111,7 @@ body {
 
 .logo__M1 {
   animation-name: logoM1;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 @keyframes logoM1 {
   0%, 28% {
@@ -126,7 +126,7 @@ body {
 
 .logo__M2 {
   animation-name: logoM2;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 @keyframes logoM2 {
   0%, 40% {
@@ -141,7 +141,7 @@ body {
 
 .logo__I {
   animation-name: logoI;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 @keyframes logoI {
   0%, 52% {
@@ -156,7 +156,7 @@ body {
 
 .logo__et {
   animation-name: logoEt;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 @keyframes logoEt {
   0%, 64% {
@@ -183,11 +183,11 @@ body {
 
   .logo {
     animation-name: splashScreenMob--logo;
-    animation-duration: 2s;
+    animation-duration: 3s;
     &__M1, &__M2, &__I, &__et {
       fill: $couleur-logo1;
       animation-name: splashScreenMob--svg;
-      animation-duration: 2s;
+      animation-duration: 3s;
     }
     @keyframes splashScreenMob--svg {
       0%, 95% { fill: white; }
@@ -198,12 +198,21 @@ body {
     }
   }
   @keyframes splashScreenMob--logo {
-    0%, 80% {
+    0%, 20% {
       z-index: 100;
     	position: fixed;
     	width: 300px;
     	left: calc( 50% - 150px );
-    	height: 100vh;
+    	height: 80vh;
+    	margin: 0;
+      opacity: 0;
+    }
+    30%, 80% {
+      z-index: 100;
+    	position: fixed;
+    	width: 300px;
+    	left: calc( 50% - 150px );
+    	height: 90vh;
     	margin: 0;
       opacity: 1;
     }
@@ -226,26 +235,35 @@ body {
     content: "";
     position: fixed;
     bottom: 40px;
-    width: 150px;
+    width: 120px;
     height: 70px;
-    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     opacity: 0;
     animation-name: splashScreenMob--emetteurs;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
   @keyframes splashScreenMob--emetteurs {
-    0%, 80% { opacity: 1; }
+    0%,20% { opacity: 0; }
+    30%, 80% { opacity: 1; }
     85% { opacity: 0; }
   }
-  .logo::before { left: calc( 50% + 20px ); }
-  .logo::after { right: calc( 50% + 20px ); }
+  .logo::before {
+    left: calc( 50% + 20px );
+    background-image: url("../images/mmi.png");
+  }
+  .logo::after {
+    right: calc( 50% + 20px );
+    background-image: url("../images/iut.png");
+  }
 
   .logo_menu::before {
     content: "";
     z-index: 99;
     @include couleur-gradient;
     animation-name: splashScreenMob--fond;
-    animation-duration: 2s;
+    animation-duration: 3s;
   }
   @keyframes splashScreenMob--fond {
     0%, 95% {
