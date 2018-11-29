@@ -2,6 +2,33 @@ $(document).ready(function(){
 
 
 
+//////////////////////////////////////////////////
+//
+//        Menu sticky desktop
+//
+//////////////////////////////////////////////////
+
+nav = $(".logo_menu");
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if(scroll > 560) {
+      nav.addClass("sticky");
+    } else {
+      nav.removeClass("sticky");
+    }
+});
+
+$(".logo").click(function() {
+  if(nav.hasClass("sticky") == true) {
+    nav.removeClass("sticky--open");
+  } else {
+    nav.addClass("sticky--open");
+  }
+});
+
+
 
 //////////////////////////////////////////////////
 //

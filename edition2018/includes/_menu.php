@@ -30,18 +30,30 @@
 
   </div>
   <nav class="menu">
-    <label for="radio_evenement" checked>Présentation</label>
-    <label for="radio_programme">Programme</label>
+    <label for="radio_evenement" checked>
+      <a href="#evenement">Présentation</a>
+    </label>
+    <label for="radio_programme">
+      <a href="#programme">Programme</a>
+    </label>
     <label for="radio_entreprises">
-      <span class="deskOnly">Ils seront là</span>
+      <span class="deskOnly">
+        <a href="#entreprises">Ils seront là</a>
+      </span>
       <span class="mobileOnly">Entreprises</span>
     </label>
     <label for="radio_etudiants">
-      <span class="deskOnly">Edition 2018</span>
+      <span class="deskOnly">
+        <a href="#etudiants">Edition 2018</a>
+      </span>
       <span class="mobileOnly">Etudiants</span>
     </label>
-    <label class="deskOnly">S'inscrire</label>
-    <label class="menu__contact" for="radio_contact">Contact</label>
+    <label class="deskOnly">
+      <a href="#">S'inscrire</a>
+    </label>
+    <label class="menu__contact" for="radio_contact">
+      <a href="#contact">Contact</a>
+    </label>
   </nav>
   <label class="mobileOnly menu__contact--fermer" for="radio_evenement"></label>
   <label class="popDetails-label" for="popDetails"></label>

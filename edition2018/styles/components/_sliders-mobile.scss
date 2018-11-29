@@ -38,6 +38,7 @@
     	direction: rtl;
       overflow-x: auto;
       overflow-y: hidden;
+      touch-action: pan-x;
       transition: all 0.2s;
       &.focused {
         overflow: visible;
