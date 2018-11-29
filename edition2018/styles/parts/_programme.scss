@@ -14,7 +14,6 @@
 	p {
 		font-family: $police2;
 		font-size: 18px;
-		text-align: center;
 		width: 290px;
 		margin: auto;
 	}
@@ -62,7 +61,7 @@
 @media (max-width: $tablette-paysage) {
 
 	#popDetails:checked ~ .programme {
-		z-index: 2;
+		z-index: 3;
 		background: transparent;
 		.programme__date, .programme__event:not(#stage_dating) { display: none; }
 		.programme__event {

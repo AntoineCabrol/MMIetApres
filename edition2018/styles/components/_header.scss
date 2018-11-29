@@ -177,7 +177,10 @@ input[type="radio"], #popDetails {
       font-size: 18px;
       color: black;
       //overflow: auto; // en attente de correctif sur Safari... :(
-      label { pointer-events: all; }
+      label {
+        pointer-events: all;
+        a { pointer-events: none; }
+      }
       label:not(.menu__contact) {
         font-size: 16px;
         line-height: 50px;

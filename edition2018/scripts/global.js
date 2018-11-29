@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
 
+
 //////////////////////////////////////////////////
 //
 //        Menu sticky desktop
@@ -21,7 +22,7 @@ $(window).scroll(function() {
 });
 
 $(".logo").click(function() {
-  if(nav.hasClass("sticky") == true) {
+  if(nav.hasClass("sticky")) {
     nav.removeClass("sticky--open");
   } else {
     nav.addClass("sticky--open");

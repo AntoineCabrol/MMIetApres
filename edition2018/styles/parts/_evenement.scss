@@ -25,22 +25,10 @@
 	padding: 20px 100px;
 }
 
-
-.presentation p{
-text-align:center;
-//	top:100px; pas nécessaire
-//	width:800px; J'ai plutôt mis un padding sur .presentation comme ça c'est flexible
-//	margin: auto auto 35px; Je passe ça dans _typos.scss
-}
-
-// J'ai rajouté .presentation comme ça ça s'applique juste ici
 .presentation h2 {
 	margin-bottom:30px;
-	/*Comment augmenter l'espace au dessus?*/
-	// Tu peux faire un margin-top
 }
 
-/*margin bottom negatif pour div presentation*/
 
 .boutons_inscription{
 	display:flex;
