@@ -21,6 +21,7 @@
     margin-top: 25px;
   }
 
+
   .temoignage {
     &_block{
       display:block;
@@ -40,14 +41,44 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("../images/photo_tem.jpg");
       background-size: cover;
       transition:opacity 0.3s ease;
       opacity : 0.3;
     }
 
+    &_block[data-S4="audiovisuel"]>.temoignage_photo_fond{
+      background-image: url("../images/photo_tem.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="graphisme"]>.temoignage_photo_fond{
+      background-image: url("../images/photo_graph.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="programmation"]>.temoignage_photo_fond{
+      background-image: url("../images/photo_prog.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="communication"]>.temoignage_photo_fond{
+      background-image: url("../images/photo_comm.jpg");
+      background-position: center;
+    }
+
+    &_block[data-S4="audiovisuel"]>.temoignage_contenu>h3{
+      color: #333399;
+    }
+    &_block[data-S4="programmation"]>.temoignage_contenu>h3{
+      color: #009933;
+    }
+    &_block[data-S4="graphisme"]>.temoignage_contenu>h3{
+      color: #cc0099;
+    }
+    &_block[data-S4="communication"]>.temoignage_contenu>h3{
+      color: #ff9900;
+    }
+
     &_contenu{
       display: flex;
+      height: 100%;
       position: relative;
       flex-direction: column;
       align-content: center;
@@ -69,6 +100,13 @@
     &_texte{
       display: block;
       position: relative;
+    }
+
+    &_nom{
+      display: block;
+      position: absolute;
+      right: 20px;
+      bottom: -30px;
     }
   }
 
@@ -95,6 +133,10 @@
   }
   .barre_couleur[data-color="orange"]{
       background-color: #ff9900;
+  }
+
+  h3[data-color="bleu"]{
+    color:  #333399;
   }
 
   .flex_button_tem{
