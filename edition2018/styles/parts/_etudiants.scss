@@ -63,6 +63,19 @@
       background-position: center;
     }
 
+    &_block[data-S4="audiovisuel"]>.temoignage_contenu>h3{
+      color: #333399;
+    }
+    &_block[data-S4="programmation"]>.temoignage_contenu>h3{
+      color: #009933;
+    }
+    &_block[data-S4="graphisme"]>.temoignage_contenu>h3{
+      color: #cc0099;
+    }
+    &_block[data-S4="communication"]>.temoignage_contenu>h3{
+      color: #ff9900;
+    }
+
     &_contenu{
       display: flex;
       height: 100%;
