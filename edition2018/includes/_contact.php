@@ -1,4 +1,4 @@
-<footer class="contact">
+<footer id="contact" class="contact">
 
   <h1 class="deskOnly h_footer">Contact</h1>
 

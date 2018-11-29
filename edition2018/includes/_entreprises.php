@@ -1,4 +1,4 @@
-<section class="entreprises">
+<section id="entreprises" class="entreprises">
 
   <h1 class="deskOnly">Ils seront là</h1>
 

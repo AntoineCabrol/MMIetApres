@@ -12,43 +12,67 @@ input[type="radio"], #popDetails {
   pointer-events: none;
 }
 
-
+.logo_menu.sticky {
+  position: fixed;
+  justify-content: flex-end;
+  .logo {
+    width: 0;
+    height: 0;
+    margin: 20px 40px 0 0;
+    overflow: hidden;
+    background-image: url("../images/+.svg");
+    background-size: 37px;
+    cursor: pointer;
+  }
+  .menu { display: none; }
+}
 .logo_menu {
 	position: absolute;
 	top: 13px;
+  left: 0;
 	display:flex;
 	justify-content:space-between;
 	width:100%;
-	margin-bottom:40px;
+	margin: auto auto 40px;
   padding: 0 calc( ( 100% - 1250px ) / 2);
-}
 
-.logo {
-	width: 200px;
-	padding: 20px;
-	margin: auto auto auto 0;
-}
+  .logo {
+  	width: 200px;
+  	padding: 20px;
+  	margin: auto auto auto 0;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0px;
+    transition: background-size 0.2s;
+  }
 
-.menu {
-  display:flex;
-  justify-content:space-between;
-  margin: 0 20px auto auto;
-	font-family: $police2;
-	font-size:22px;
-	color:white;
+  .menu {
+    display:flex;
+    justify-content:space-between;
+    margin: 0 20px auto auto;
+  	font-family: $police2;
+  	font-size:22px;
+  	color:white;
 
-  label {
-  	line-height:100px;
-  	letter-spacing:-0.5px;
-  	word-spacing:-1px;
-  	margin: auto 10px;
-    &:hover {
-    	text-decoration:underline;
-    	cursor:pointer;
+    label {
+      pointer-events: none;
+    	line-height:100px;
+    	letter-spacing:-0.5px;
+    	word-spacing:-1px;
+    	margin: auto 10px;
+      &:hover {
+      	text-decoration:underline;
+      	cursor:pointer;
+      }
+      a { pointer-events: all; }
     }
+
   }
 
 }
+
+
 
 
 
@@ -78,7 +102,20 @@ input[type="radio"], #popDetails {
   #radio_evenement:checked ~ .evenement,
   #radio_programme:checked ~ .programme,
   #radio_entreprises:checked ~ .entreprises,
-  #radio_etudiants:checked ~ .etudiants { z-index: 1; opacity: 1; padding-top: 115px; }
+  #radio_etudiants:checked ~ .etudiants {
+    z-index: 1;
+    opacity: 1;
+    padding-top: 115px;
+  }
+
+  #radio_evenement:checked ~ .logo_menu .menu label[for="radio_evenement"],
+  #radio_programme:checked ~ .logo_menu .menu label[for="radio_programme"],
+  #radio_entreprises:checked ~ .logo_menu .menu label[for="radio_entreprises"],
+  #radio_etudiants:checked ~ .logo_menu .menu label[for="radio_etudiants"] {
+    opacity: 1;
+    font-size: inherit;
+    margin: auto 5px;
+  }
 
   #radio_contact:checked ~ .logo_menu {
     &::after { top: -10px; @include couleur-gradient;}
@@ -139,9 +176,15 @@ input[type="radio"], #popDetails {
       margin: 0 auto;
       font-size: 18px;
       color: black;
-      overflow: auto;
-      white-space: nowrap;
-      label { line-height: 50px; }
+      //overflow: auto; // en attente de correctif sur Safari... :(
+      label { pointer-events: all; }
+      label:not(.menu__contact) {
+        font-size: 16px;
+        line-height: 50px;
+        margin: auto 3px;
+        opacity: 0.6;
+        transition: all 0.2s;
+      }
       &__contact, &__contact--fermer {
         position: absolute;
         top: 12px;
@@ -149,10 +192,12 @@ input[type="radio"], #popDetails {
         width: 30px;
         height: 30px;
       	padding: 30px;
+        font-size: 0;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
       	background-size: 28px;
+        opacity: 1;
       }
       &__contact {
       	font-size: 0;
