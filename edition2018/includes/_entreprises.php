@@ -10,9 +10,7 @@
         <img src="images/vas_y_paulette.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        Vas-y Paulette
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
@@ -20,9 +18,7 @@
         <img src="images/agence_en_ville.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        Agence En Ville
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
@@ -30,9 +26,7 @@
         <img src="images/new_quest.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        NewQuest
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
@@ -40,9 +34,7 @@
         <img src="images/logo.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        MMI&Après
       </div>
     </div>
     <!--div class="entreprise sliderMob__elem">
