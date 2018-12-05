@@ -45,7 +45,7 @@
         et dolore magna aliqua.
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <!--div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/logo.png" alt="logo" width="100%" />
       </div>
@@ -54,8 +54,8 @@
         elit, sed do eiusmod tempor incididunt ut labore
         et dolore magna aliqua.
       </div>
-    </div>
-    <div class="entreprise sliderMob__elem">
+    </div-->
+    <!--div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/logo.png" alt="logo" width="100%" />
       </div>
@@ -64,7 +64,7 @@
         elit, sed do eiusmod tempor incididunt ut labore
         et dolore magna aliqua.
       </div>
-    </div>
+    </div-->
   </div>
 
   <div class="mobileOnly etPart etPart--Vous">
@@ -80,5 +80,9 @@
     </div>
 
   </div>
+
+  <a target="_blank"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSf5jyt6-rdhzoc-Xh0Z218aqm6jInbgftcvGRSSzBKuzPK-_Q/viewform"
+     class="mobileOnly bouton">Inscription</a>
 
 </section>

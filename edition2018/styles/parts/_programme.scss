@@ -6,7 +6,7 @@
 
 .programme {
 	max-width: 660px;
-	margin: auto;
+	margin: 0 auto 100px;
 	background-color: white;
 
 	h1 { margin-bottom: 75px; }
@@ -20,10 +20,16 @@
 
 	&__event {
 		position: relative;
-		margin-bottom: 150px;
+		display: block;
+		margin-bottom: 40px;
 		// Pour remplacer les class "gauche" et "droite" :)
 		&:nth-child(odd) { margin-right: 200px; } // 1 sur 2 impair
 		&:nth-child(even) { margin-left: 200px; } // 1 sur 2 pair
+	}
+
+	@media (min-width: $tablette-paysage) {
+		#presentation_dut { margin-bottom: 70px;}
+		#buffet { margin: 40px 0 60px 200px; }
 	}
 
 	.contenu {
@@ -98,6 +104,7 @@
 			color: $couleur-logo2;
 			text-transform: uppercase;
 			font: $police-texte;
+			text-align: center;
 		}
 
 		&__event {

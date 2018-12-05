@@ -35,7 +35,7 @@
 					Mise en place de petits entretiens qui permettront l’échange entre
 					professionnel et étudiant.
 				</p>
-				<a class="bouton">Inscription</a>
+				<a class="bouton bouton--off">Inscription</a>
 			</aside>
     </label>
 

@@ -60,7 +60,7 @@
 
 #popDetails:checked ~ .logo_menu .menu {
   opacity: 0.2;
-  pointer-events: none;
+  label { pointer-events: none; }
 }
 
 #popDetails:checked ~ .logo_menu .popDetails-label {

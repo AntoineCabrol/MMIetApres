@@ -49,7 +49,7 @@
       <span class="mobileOnly">Etudiants</span>
     </label>
     <label class="deskOnly">
-      <a href="#">S'inscrire</a>
+      <a href="#evenement">S'inscrire</a>
     </label>
     <label class="menu__contact" for="radio_contact">
       <a href="#contact">Contact</a>

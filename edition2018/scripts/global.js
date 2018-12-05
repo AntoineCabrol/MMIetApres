@@ -9,22 +9,24 @@ $(document).ready(function(){
 //
 //////////////////////////////////////////////////
 
-nav = $(".logo_menu");
+var nav = $(".logo_menu");
+var scroll;
 
 $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+  scroll = $(window).scrollTop();
 
-    if(scroll > 560) {
-      nav.addClass("sticky");
-    } else {
-      nav.removeClass("sticky");
-    }
+  if(scroll > 560) {
+    nav.addClass("sticky");
+  } else {
+    nav.removeClass("sticky");
+    $(".menu").addClass("noanimation");
+  }
 });
 
 $(".logo").click(function() {
-  if(nav.hasClass("sticky")) {
+  if(nav.hasClass("sticky--open")) {
     nav.removeClass("sticky--open");
-  } else {
+  } else if ( (nav.hasClass("sticky--open")==false) && (scroll>560)) {
     nav.addClass("sticky--open");
   }
 });

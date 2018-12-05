@@ -20,6 +20,10 @@
   line-height: 70px;
   text-align: center;
 	transition: letter-spacing 0.2s;
+	&--off {
+		pointer-events: none;
+		opacity: 0.2;
+	}
 }
 
 .bouton:hover{

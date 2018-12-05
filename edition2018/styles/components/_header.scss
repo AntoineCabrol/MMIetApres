@@ -13,6 +13,7 @@ input[type="radio"], #popDetails {
 }
 
 .logo_menu.sticky {
+  z-index: 99;
   position: fixed;
   justify-content: flex-end;
   .logo {
@@ -22,10 +23,36 @@ input[type="radio"], #popDetails {
     overflow: hidden;
     background-image: url("../images/+.svg");
     background-size: 37px;
+    transform: rotate(0deg);
     cursor: pointer;
+    transition: transform 0.2s, top 0.2s;
   }
   .menu { display: none; }
 }
+
+.logo_menu.sticky.sticky--open {
+  top: 0;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.9);
+  transition: background-color 0.2s;
+  .logo {
+    position: fixed;
+    top: 13px;
+    left: calc( ( 100% - 1250px ) / 2);
+    transform: rotate(45deg);
+  }
+  .menu {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    color: black;
+    animation: none;
+    label { margin: 0 auto; line-height: 3; }
+  }
+}
+
 .logo_menu {
 	position: absolute;
 	top: 13px;
