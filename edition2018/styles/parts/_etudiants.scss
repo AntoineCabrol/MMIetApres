@@ -153,8 +153,23 @@
 @media (max-width: $tablette-paysage) {
 
   .temoignage {
+    &_block[data-S4="audiovisuel"] &_photo_fond{
+      background-image: url("../images/photo_tem.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="graphisme"] &_photo_fond{
+      background-image: url("../images/photo_graph.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="programmation"] &_photo_fond{
+      background-image: url("../images/photo_prog.jpg");
+      background-position: center;
+    }
+    &_block[data-S4="communication"] &_photo_fond{
+      background-image: url("../images/photo_comm.jpg");
+      background-position: center;
+    }
     &_block &_photo_fond {
-    	background-image: url("../images/photo_tem.jpg");
     	background-size: cover;
     	padding-bottom: 100%;
     	border-radius: 100%;
