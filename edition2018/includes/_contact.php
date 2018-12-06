@@ -6,10 +6,15 @@
       <div class="flex_coordonnees">
         <p class="mobileOnly agence">L'agence Néon</p>
         <p class="mail">contactmmietapres@gmail.com</p>
-      <p class="telephone">Anaïs Lambert : 06 00 00 00 00</p>
-        <div class="icone_facebook deskOnly">
+        <p class="telephone">
+          Anaïs Lambert :
+          <span class="telephone__num">06 00 00 00 00</span>
+        </p>
+        <a class="icone_facebook deskOnly"
+           target="_blank"
+           href="https://www.facebook.com/events/368312163914822/">
           <img src="images/icone_facebook.png" width="100%"/>
-        </div>
+        </a>
       </div>
       <div class="flex_depart">
           <p>Département MMI</p>

@@ -39,6 +39,13 @@
         width: 25px;
         margin: 5px auto;
       }
+      .telephone__num {
+        color: transparent;
+        background-image: url("../images/numeroAnais_blanc.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     .flex_depart {
@@ -123,6 +130,7 @@
 
       .flex_coordonnees {
         order: 4;
+        .telephone__num { background-image: url("../images/numeroAnais_noir.gif") }
       }
 
       .flex_depart {
