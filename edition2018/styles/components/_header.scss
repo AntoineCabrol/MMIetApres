@@ -40,7 +40,7 @@ input[type="radio"], #popDetails {
   .logo {
     position: fixed;
     top: 13px;
-    left: calc( ( 100% - 1250px ) / 2);
+    right: calc( ( 100% - 1250px ) / 2);
     transform: rotate(45deg);
   }
   .menu {
