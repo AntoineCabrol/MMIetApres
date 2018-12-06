@@ -7,56 +7,58 @@
   <div class="slider sliderMob">
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/vas_y_paulette.png" alt="logo" width="100%" />
+        <img src="images/entreprises/vas_y_paulette.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Vas-y Paulette
+        <h4><a target="_blank" href="https://vasypaulette.com/">Vas-y Paulette</a></h4>
+        Agence de communication graphique
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/agence_en_ville.png" alt="logo" width="100%" />
+        <img src="images/entreprises/agence_en_ville.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Agence En Ville
+        <h4><a target="_blank" href="http://lagenceenville.com/">Agence En Ville</a></h4>
+        Agence de communication graphique et architecturale
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/new_quest.png" alt="logo" width="100%" />
+        <img src="images/entreprises/new_quest.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        NewQuest
+        <h4><a target="_blank" href="https://www.newquest.fr/">NewQuest</a></h4>
+        Agence digitale et innovatrice
       </div>
     </div>
     <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/entreprises/agence_yocot.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        MMI&Après
+        <h4><a target="_blank" href="http://www.yocot.com/">Yocot</a></h4>
+        Agence créatrice de vidéos professionnelles
       </div>
     </div>
-    <!--div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/entreprises/agence_future.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        <h4><a target="_blank" href="http://www.agence-future.com/">Agence future</a></h4>
+        Agence conseillère en communication visuelle et interactive
       </div>
-    </div-->
-    <!--div class="entreprise sliderMob__elem">
+    </div>
+    <div class="entreprise sliderMob__elem">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/logo.png" alt="logo" width="100%" />
+        <img src="images/entreprises/agence_zeecom.svg" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua.
+        <h4><a target="_blank" href="https://www.zeecom.fr/">Zeecom</a></h4>
+        Agence de communication digitale
       </div>
-    </div-->
+    </div>
   </div>
 
   <div class="mobileOnly etPart etPart--Vous">
