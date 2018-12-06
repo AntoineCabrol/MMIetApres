@@ -13,14 +13,10 @@
     &.focused .intro,
     &.focused .etPart,
     &.focused .bouton {
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
+      display: none;
     }
     &.focused .sliderMob .sliderMob__elem:not(.focused) {
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s;
+      display: none;
     }
 
     .intro {
@@ -36,7 +32,6 @@
     	height: auto;
       min-height: 140px;
     	padding: 0 30%;
-    	direction: rtl;
       overflow-x: auto;
       overflow-y: hidden;
       touch-action: pan-x;
@@ -53,7 +48,7 @@
         &.focused {
         	z-index: 1;
         	position: absolute;
-          top: -40px;
+          top: 0;
         	left: 0;
           flex-direction: column;
         	width: 100%;

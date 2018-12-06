@@ -58,13 +58,13 @@
         <div class="temoignage_photo_fond sliderMob__logo">
         </div>
         <div class="temoignage_contenu sliderMob__texte">
-                <span class="deskOnly barre_couleur" data-color="orange"></span>
-                <img src="./images/icone_communication.svg" class="deskOnly temoignage_icone" width="100%"/>
-                <h3 class="deskOnly">Communication</h3>
-                <p>« MMI&Après a été une excellente occasion de mettre un premier pas dans
-                  le monde professionnel ! En plus d’avoir trouvé mon stage,
-                  l’événement m’a permis de prendre davantage confiance en moi. »</p>
-                  <p class="temoignage_nom">Elodie Spicher</p>
+          <span class="deskOnly barre_couleur" data-color="orange"></span>
+          <img src="./images/icone_communication.svg" class="deskOnly temoignage_icone" width="100%"/>
+          <h3 class="deskOnly">Communication</h3>
+          <p>« MMI&Après a été une excellente occasion de mettre un premier pas dans
+            le monde professionnel ! En plus d’avoir trouvé mon stage,
+            l’événement m’a permis de prendre davantage confiance en moi. »</p>
+            <p class="temoignage_nom">Elodie Spicher</p>
         </div>
     </div>
   </div>
@@ -87,6 +87,6 @@
 
   </div>
 
-  <a class="mobileOnly bouton bouton--off">Inscription</a> 
+  <a class="mobileOnly bouton bouton--off">Inscription</a>
 
 </section>
