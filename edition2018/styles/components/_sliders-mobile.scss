@@ -11,7 +11,8 @@
   .entreprises, .etudiants {
     padding: 0 calc( ( 100% - 480px ) / 2);
     &.focused .intro,
-    &.focused .etPart {
+    &.focused .etPart,
+    &.focused .bouton {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
