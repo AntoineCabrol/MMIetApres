@@ -30,12 +30,14 @@
                 <span class="deskOnly barre_couleur" data-color="vert"></span>
                 <img src="./images/icone_programmation.svg" class="deskOnly temoignage_icone" width="100%"/>
                 <h3 class="deskOnly">Programmation</h3>
-                <p>« J’avais déjà repéré l’entreprise NewQuest avant l’événement,
-                  mais c’est pendant MMI&Après que j’ai passé mon stage-dating.
-                  Un peu de pression et pas mal d’échanges avec les entreprises,
-                  qui m’ont permis de décrocher mon stage à Newquest,
-                  et ainsi obtenir une alternance ! »</p>
-                  <p class="temoignage_nom">Clément Dumas</p>
+                <p> « Je suis allé à MMI&Après afin de trouver un stage.
+                    J'ai pu passer quatre entretiens qui m'ont permis de discuter avec des professionels.
+                    Deux étaient intéressés.
+                    J'ai pu visiter leur boite et repasser un entretien plus long.
+                    MMI&Après permet d'avoir des rendez-vous avec les agences sans avoir à
+                    passer des heures à les chercher. De plus cela permet d'avoir des contacts. »
+                </p>
+                <p class="temoignage_nom">Clément Dumas</p>
         </div>
     </div>
     <div class="temoignage_block sliderMob__elem" data-S4="graphisme">
@@ -45,12 +47,11 @@
             <span class="deskOnly barre_couleur" data-color="magenta"></span>
             <img src="./images/icone_graphisme.svg" class="deskOnly temoignage_icone" width="100%"/>
             <h3 class="deskOnly">Graphisme</h3>
-            <p>« Je suis allé à MMI&Après afin de trouver un stage.
-              J'ai pu passer quatre entretiens qui m'ont permis de discuter avec des professionels.
-              Deux étaient intéressés.
-              J'ai pu visiter leur boite et repasser un entretien plus long.
-              MMI&Après permet d'avoir des rendez-vous avec les agences sans avoir à
-              passer des heures à les chercher. De plus cela permet d'avoir des contacts. »</p>
+            <p> « J’avais déjà repéré l’entreprise NewQuest avant l’événement,
+                mais c’est pendant MMI&Après que j’ai passé mon stage-dating.
+                Un peu de pression et pas mal d’échanges avec les entreprises,
+                qui m’ont permis de décrocher mon stage à Newquest,
+                et ainsi obtenir une alternance ! »</p>
               <p class="temoignage_nom">Anna Levy</p>
         </div>
     </div>
