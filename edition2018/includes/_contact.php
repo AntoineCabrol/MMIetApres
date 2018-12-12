@@ -24,13 +24,19 @@
       </div>
       <div class="flex_img">
         <div class="emetteur">
+          <a target="_blank" href="http://mmi.univ-savoie.fr/site/">
           <img src="images/mmi.png" height="100%"/>
+        </a>
         </div>
         <div class="emetteur">
-          <img src="images/neon.svg" height="100%"/>
+          <a target="_blank" href="https://mmi.univ-smb.fr/~rouxvi/NeonWebsite/">
+            <img src="images/neon.svg" height="100%"/>
+          </a>
         </div>
         <div class="emetteur">
-          <img src="images/iut.png" height="100%"/>
+          <a target="_blank" href="http://www.iut-chy.univ-savoie.fr/index.php">
+            <img src="images/iut.png" height="100%"/>
+          </a>
         </div>
       </div>
       <iframe class="googlemaps"
