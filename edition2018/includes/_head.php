@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="styles/global.min.css" />
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#130E7C"/>
-  <link rel="icon" href="images/favicon.ico" />
+  <link rel="icon" href="images/appIcon-192.png" />
   <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="scripts/global.js"></script>

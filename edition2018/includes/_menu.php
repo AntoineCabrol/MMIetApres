@@ -11,7 +11,7 @@
 
 <div class="logo_menu">
   <div class="logo">
-    <svg class="logo_mmietapres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.88 135.53">
+    <svg class="logo_mmietapres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.88 135.53" onclick="location.href='http://www.mmietapres.fr/'">
       <title>Logo MMI&Après</title>
       <g id="Calque_2" data-name="Calque 2">
         <path class="couleur2 logo__A" d="M96.05,126.72H83.88l-2.37,7.95h-10L84.86,93.75l5.09,0h0l5.11,0,13.38,40.92h-10Zm-10-7.31h7.78L90,106.71h-.17Z"/>
@@ -27,7 +27,6 @@
         <path class="couleur1 logo__I" d="M275,81.56H255.27V0H275Z"/>
       </g>
     </svg>
-
   </div>
   <nav class="menu">
     <label for="radio_evenement" checked>

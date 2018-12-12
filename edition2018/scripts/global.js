@@ -17,9 +17,9 @@ $(window).scroll(function() {
 
   if(scroll > 560) {
     nav.addClass("sticky");
+    $("body, .menu, .presentation, .logo, .logo_mmietapres").addClass("noanimation");
   } else {
     nav.removeClass("sticky");
-    $(".menu").addClass("noanimation");
   }
 });
 
