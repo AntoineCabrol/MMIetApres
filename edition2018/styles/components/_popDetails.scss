@@ -27,7 +27,7 @@
 }
 
 
-#popDetails:checked + .popDetails {
+.popDetails--opened {
   height: 100vh;
   &::before {
     bottom: 0;
@@ -37,16 +37,31 @@
   }
 }
 
-#popDetails:checked ~ .logo_menu::after { background: white!important; }
+.logo_menu.popDetails--opened {
 
-#popDetails:checked ~ .logo_menu .logo {
-  &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; }
-  &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
-    fill: $couleur-logo2;
+  &::after { background: white!important; }
+
+  .logo {
+    &__M1, &__M2, &__I, &__et { fill: $couleur-logo1; }
+    &__A, &__P, &__R, &__E, &__accent, &__S, &__question {
+      fill: $couleur-logo2;
+    }
   }
+
+  .menu {
+    opacity: 0.2;
+    label { pointer-events: none; }
+  }
+
+  .popDetails-label {
+    pointer-events: all;
+    height: 100px;
+  }
+
 }
 
-#popDetails ~ .logo_menu .popDetails-label {
+
+.popDetails-label {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -56,14 +71,4 @@
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;
-}
-
-#popDetails:checked ~ .logo_menu .menu {
-  opacity: 0.2;
-  label { pointer-events: none; }
-}
-
-#popDetails:checked ~ .logo_menu .popDetails-label {
-  pointer-events: all;
-  height: 100px;
 }

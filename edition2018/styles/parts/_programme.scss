@@ -4,57 +4,113 @@
                 # PROGRAMME
 ================================================ **/
 
+
 .programme {
-	max-width: 660px;
-	margin: 0 auto 100px;
-	background-color: white;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	padding-bottom: 30px;
+	background-color: $couleur-fond-mobile;
 
-	h1 { margin-bottom: 75px; }
-
-	p {
-		font-family: $police2;
-		font-size: 18px;
-		width: 290px;
-		margin: auto;
+	p.programme__date {
+		width: 100%;
+		margin: 50px auto 30px;
+		color: $couleur-logo2;
+		text-transform: uppercase;
+		font: $police-texte;
+		text-align: center;
 	}
+
+	p:last-of-type { margin-bottom: 0; }
 
 	&__event {
 		position: relative;
-		display: block;
-		margin-bottom: 40px;
-		// Pour remplacer les class "gauche" et "droite" :)
-		&:nth-child(odd) { margin-right: 200px; } // 1 sur 2 impair
-		&:nth-child(even) { margin-left: 200px; } // 1 sur 2 pair
+		display: flex;
+		flex-flow: wrap;
+		width: 100%;
+		height: 57px;
+		max-width: 380px;
+		margin: 10px 20px;
+		border-left: 2px solid;
+		border-color: $couleur-bordure;
+		overflow: hidden;
+		cursor: pointer;
+		transition: border-color 0.2s;
+		&:hover { border-color: $couleur-logo2; }
+		&.focused {
+			height: 100%;
+			border-color: $couleur-logo2;
+			cursor: default;
+			.programme__event {
+				&-titre { color: $couleur-logo2; }
+			}
+			.programme__contenu--sup {
+				opacity: 1;
+				transform: translateY(-15px);
+			}
+		}
+
+		&-date {
+			margin: 0;
+			text-align: right;
+			font-size: 20px;
+			font-weight: 300;
+			font-family: $police2;
+		}
+		&-titre {
+			margin: 0;
+			padding-right: 10px;
+			font: $police-texte;
+			font-weight: bold;
+			text-align: left;
+			color: $couleur-texte;
+			transition: color 0.2s;
+		}
+		&-description {
+			width: 70%;
+			margin: 10px auto 0 0;
+		}
+		p.programme__event-description--mobile {
+			order: 3;
+			width: 55%;
+			margin: 0 auto 0 0;
+			font: $police-texte;
+			font-size: 14px;
+			text-align: left;
+		}
+		&-plus {
+			position: absolute;
+			right: -30px;
+			width: 24px;
+			height: 24px;
+			background-image: url("../images/+.svg");
+			background-size: 15px;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
 	}
 
-	@media (min-width: $tablette-paysage) {
-		#presentation_dut { margin-bottom: 70px;}
-		#buffet { margin: 40px 0 60px 200px; }
+	&__contenu {
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+		width: 100%;
+		padding: 20px;
+		&--sup {
+			width: 70%;
+			margin: 0 auto 0 20px;
+			opacity: 0;
+			transform: translateY(-30px);
+			transition: all 0.2s;
+			p {
+				width: 100%;
+				text-align: left;
+				font-size: 14px;
+			}
+		}
 	}
-
-	.contenu {
-		z-index: 1;
-		position: relative;
-	}
-
-	.image_programme {
-		width: 150px;
-		height: auto;
-		position: absolute;
-		margin-top: 20px;
-		z-index: 0;
-		opacity: 0.2;
-	}
-
-	#image_accueil { margin-left: 120px; }
-	#image_presentation_dut { margin-left: 140px; }
-	#image_stage_dating { margin-left: 150px; }
-	#image_buffet { margin-left: 150px; }
-	#image_tables_rondes { margin-left: 155px; }
 
 }
-
-
 
 
 
@@ -91,88 +147,36 @@
 	}
 
 	.programme {
-		display: flex;
 		flex-flow: wrap;
 		justify-content: center;
-		max-width: none;
-    padding-bottom: 80px;
-		background-color: $couleur-fond-mobile;
-
-		p.programme__date {
-			width: 100%;
-			margin: 50px auto 30px;
-			color: $couleur-logo2;
-			text-transform: uppercase;
-			font: $police-texte;
-			text-align: center;
-		}
+		padding-bottom: 80px;
 
 		&__event {
-			flex: 1;
-			min-width: 270px;
-			max-width: 300px;
-			&:nth-child(odd), &:nth-child(even) { margin: 10px 20px; }
-			.image_programme { display: none; }
-
-			.contenu {
-				display: flex;
-				flex-flow: wrap;
-				padding: 20px;
-				background-color: white;
-				box-shadow: 0 0 10px grey;
-				&--sup {
-					display: none;
-					opacity: 0;
-					margin-top: 20px;
-					color: white;
-					p {
-						width: 100%;
-						text-align: left;
-						font-size: 14px;
-					}
-				}
-			}
-			&-date {
-				order: 2;
-				width: 45%;
-				margin: auto;
-				text-align: right;
-				font-size: 20px;
-				font-weight: 300;
-				font-family: $police2;
-			}
-			&-titre {
-				order: 1;
-				width: 55%;
-				margin: auto;
-				font: $police-texte;
-				font-weight: bold;
-				text-align: left;
-				color: $couleur-texte;
-				padding-right: 10px;
-			}
-			&-description { display: none; }
-			p.programme__event-description--mobile {
-				order: 3;
-				width: 55%;
-				margin: 0 auto 0 0;
-				font: $police-texte;
-				font-size: 14px;
-				text-align: left;
-			}
-			&-plus {
-				position: absolute;
-				bottom: 10px;
-				right: 20px;
-				width: 30px;
-				height: 30px;
-				background-image: url("../images/+.svg");
-				background-size: 15px;
-				background-position: center;
-				background-repeat: no-repeat;
-			}
+			border: none;
+			overflow: visible;
+			transition: margin-top 0.2s;
+			&:hover { border: none; }
 		}
 
+		&__contenu:not(.programme__contenu--sup) {
+			background-color: white;
+			box-shadow: 0 0 10px grey;
+		}
+	}
+
+	.programme.focused {
+		align-items: flex-start;
+		.programme__date { display: none; }
+		.programme__event {
+			height: auto;
+			margin-top: 70px;
+			cursor: pointer;
+			&:not(.focused) { display: none; }
+			&.focused {
+				.programme__event-titre { color: inherit; }
+				.programme__contenu--sup { width: 100%; margin: 0; }
+			}
+		}
 	}
 
 }
