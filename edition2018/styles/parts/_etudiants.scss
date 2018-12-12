@@ -64,16 +64,16 @@
     }
 
     &_block[data-S4="audiovisuel"]>.temoignage_contenu>h3{
-      color: #333399;
+      color: #C8213D;
     }
     &_block[data-S4="programmation"]>.temoignage_contenu>h3{
-      color: #009933;
+      color: #1D1D1B;
     }
     &_block[data-S4="graphisme"]>.temoignage_contenu>h3{
-      color: #cc0099;
+      color: #292E6A;
     }
     &_block[data-S4="communication"]>.temoignage_contenu>h3{
-      color: #ff9900;
+      color: #5A5E6B;
     }
 
     &_contenu{
@@ -123,17 +123,18 @@
     }
 
   .barre_couleur[data-color="bleu"]{
-      background-color: #333399;
+      background-color: #C8213D;
   }
   .barre_couleur[data-color="vert"]{
-      background-color: #009933;
+      background-color:#1D1D1B;
   }
   .barre_couleur[data-color="magenta"]{
-      background-color: #cc0099;
+      background-color: #292E6A;
   }
   .barre_couleur[data-color="orange"]{
-      background-color: #ff9900;
+      background-color: #CAC9C9;
   }
+
 
   h3[data-color="bleu"]{
     color:  #333399;
