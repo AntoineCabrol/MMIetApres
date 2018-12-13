@@ -21,14 +21,11 @@
 		text-align: center;
 	}
 
-	p:last-of-type { margin-bottom: 0; }
-
 	&__event {
 		position: relative;
 		display: flex;
 		flex-flow: wrap;
 		width: 100%;
-		height: 57px;
 		max-width: 380px;
 		margin: 10px 20px;
 		border-left: 2px solid;
@@ -43,9 +40,14 @@
 			cursor: default;
 			.programme__event {
 				&-titre { color: $couleur-logo2; }
+				&-plus {
+					margin-top: -20px;
+					opacity: 0;
+				}
 			}
 			.programme__contenu--sup {
 				opacity: 1;
+				height: auto;
 				transform: translateY(-15px);
 			}
 		}
@@ -79,14 +81,14 @@
 			text-align: left;
 		}
 		&-plus {
-			position: absolute;
-			right: -30px;
-			width: 24px;
-			height: 24px;
-			background-image: url("../images/+.svg");
-			background-size: 15px;
-			background-position: center;
+			width: 100%;
+			height: 20px;
+			margin: 7px 0 5px;
+			background-image: url("../images/i.svg");
+			background-size: contain;
+			background-position: 98%;
 			background-repeat: no-repeat;
+			transition: all 0.2s;
 		}
 	}
 
@@ -95,13 +97,20 @@
 		flex-flow: wrap;
 		justify-content: space-between;
 		width: 100%;
-		padding: 20px;
+		margin: 10px auto 10px 20px;
+
+		p:last-of-type { margin-bottom: 0; }
+
 		&--sup {
 			width: 70%;
+			height: 0;
 			margin: 0 auto 0 20px;
 			opacity: 0;
 			transform: translateY(-30px);
 			transition: all 0.2s;
+			.programme__event-description {
+				padding-bottom: 15px;
+			}
 			p {
 				width: 100%;
 				text-align: left;
@@ -152,6 +161,7 @@
 		padding-bottom: 80px;
 
 		&__event {
+			z-index: 1;
 			border: none;
 			overflow: visible;
 			transition: margin-top 0.2s;
@@ -161,6 +171,8 @@
 		&__contenu:not(.programme__contenu--sup) {
 			background-color: white;
 			box-shadow: 0 0 10px grey;
+			margin: 0;
+			padding: 20px;
 		}
 	}
 
@@ -171,10 +183,17 @@
 			height: auto;
 			margin-top: 70px;
 			cursor: pointer;
+			transition-duration: 0.3s;
 			&:not(.focused) { display: none; }
 			&.focused {
 				.programme__event-titre { color: inherit; }
-				.programme__contenu--sup { width: 100%; margin: 0; }
+				.programme__contenu--sup {
+					width: 100%;
+					margin: 15px 0 0 0;
+					color: white;
+					transform: translateY(0);
+					cursor: default;
+				}
 			}
 		}
 	}

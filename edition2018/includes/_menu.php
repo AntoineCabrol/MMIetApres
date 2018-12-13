@@ -5,9 +5,6 @@
 <input type="radio" name="sections" id="radio_etudiants" />
 <input type="radio" name="sections" id="radio_contact" />
 
-<input type="checkbox" id="popDetails" />
-<div class="mobileOnly popDetails"></div>
-
 
 <div class="logo_menu">
   <div class="logo">

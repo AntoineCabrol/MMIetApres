@@ -35,7 +35,7 @@
 				<p class="programme__event-description">
 					Mise en place de petits entretiens entre professionnel et étudiant
 				</p>
-				<a class="mobileOnly bouton bouton--off">Inscription</a>
+				<a class="mobileOnly bouton bouton--blanc bouton--off">Inscription</a>
 			</aside>
     </div>
 
@@ -63,5 +63,7 @@
 				</p>
 			</aside>
     </div>
+
+		<div class="mobileOnly popDetails"></div>
 
 </section>

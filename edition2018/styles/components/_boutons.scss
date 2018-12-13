@@ -7,9 +7,9 @@
 .bouton {
 	flex: 1;
 	margin: 0 20px;
-	max-width:280px;
-	height:70px;
-	font-size:18px;
+	max-width: 280px;
+	line-height: 70px;
+	font-size: 18px;
 	font-family: $police2;
 	font-weight: bold;
   color: $couleur-logo2;
@@ -23,6 +23,10 @@
 	&--off {
 		pointer-events: none;
 		opacity: 0.2;
+	}
+	&--blanc {
+		color: white;
+		border-color: white;
 	}
 }
 

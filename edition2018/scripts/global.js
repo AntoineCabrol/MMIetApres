@@ -44,19 +44,21 @@ var screenWidth = $(window).width();
 
 if(screenWidth > 1024) {
   $(".programme__event:first-of-type").addClass("focused");
-  $(".programme__event").click(function() {
+  $(".programme__event:not(.programme__contenu--sup)").click(function() {
       $(".programme__event").removeClass("focused");
       $(this).addClass("focused");
   });
 } else {
   var indic = 0;
-  $(".programme__event").click(function() {
+  $(".programme__event:not(.programme__contenu--sup)").click(function() {
     if(indic == 0) {
       $(".programme").addClass("focused");
+      $(".popDetails").addClass("popDetails--opened");
       $(this).addClass("focused");
       indic = 1;
     } else {
       $(".programme").removeClass("focused");
+      $(".popDetails").removeClass("popDetails--opened");
       $(this).removeClass("focused");
       indic = 0;
     }
