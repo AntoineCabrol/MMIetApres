@@ -52,7 +52,9 @@
 
   <p class="deskOnly contact_mentions">©2018 - <a href="mentions.php">Mentions Légales</a></p>
 
-  <label class="mobileOnly" for="popDetails">Mentions légales</label>
+  <label class="mobileOnly mentions-trigger">Mentions légales</label>
   <?php include "_mentions.php" ?>
+
+  <b class="mobileOnly popDetails"></b>
 
 </footer>

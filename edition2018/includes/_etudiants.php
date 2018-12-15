@@ -90,4 +90,6 @@
 
   <a class="mobileOnly bouton bouton--off">Inscription</a>
 
+  <b class="mobileOnly popDetails"></b>
+
 </section>

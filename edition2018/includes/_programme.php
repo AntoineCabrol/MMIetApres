@@ -64,6 +64,6 @@
 			</aside>
     </div>
 
-		<div class="mobileOnly popDetails"></div>
+		<b class="mobileOnly popDetails"></b>
 
 </section>

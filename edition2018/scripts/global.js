@@ -68,6 +68,26 @@ if(screenWidth > 1024) {
 
 
 
+//////////////////////////////////////////////////
+//
+//        Mentions popup mobile
+//
+//////////////////////////////////////////////////
+
+$(".mentions-trigger").click(function() {
+  if(indic == 0) {
+    $(".contact").addClass("focused").scrollTop(0);
+    $(".popDetails").addClass("popDetails--opened");
+    indic = 1;
+  } else {
+    $(".contact").removeClass("focused");
+    $(".popDetails").removeClass("popDetails--opened");
+    indic = 0;
+  }
+});
+
+
+
 
 //////////////////////////////////////////////////
 //

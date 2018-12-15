@@ -85,7 +85,7 @@
   .contact_mentions {
     color: white;
     text-align: center;
-  } 
+  }
 
   .mentions { display: none; } //include pour mobile
 
@@ -109,6 +109,28 @@
       opacity: 1;
 		}
 	}
+
+  .contact.focused {
+    z-index: 99;
+    padding: 30px 0;
+    .mentions-trigger, .mentions { position: relative; z-index: 1; }
+    .flex_footer_global { display: none; }
+    .mentions-trigger {
+    	width: 30px;
+    	height: 30px;
+    	margin-left: auto;
+      margin-right: 20px;
+    	font-size: 0;
+      transition: margin-right 0.4s;
+      &::after {
+        width: 30px;
+        height: 30px;
+        margin-left: 0;
+        background-image: url("../images/croix.svg");
+      }
+    }
+    .mentions { height: auto; opacity: 1; }
+  }
 
   .contact {
     margin-top: 0;
@@ -179,7 +201,7 @@
       font-weight:bold;
     }
 
-    label {
+    .mentions-trigger {
       font-family: $police1;
       font-size: 16px;
       font-weight: bold;
