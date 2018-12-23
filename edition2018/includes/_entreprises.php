@@ -1,4 +1,6 @@
-<section id="entreprises" class="entreprises">
+<section id="entreprises" class="section entreprises"
+         data-action="display"
+         data-name="sectionEntreprises">
 
   <h1 class="deskOnly">Ils seront là</h1>
 
@@ -78,7 +80,5 @@
   <a target="_blank"
      href="https://docs.google.com/forms/d/e/1FAIpQLSf5jyt6-rdhzoc-Xh0Z218aqm6jInbgftcvGRSSzBKuzPK-_Q/viewform"
      class="mobileOnly bouton">Inscription</a>
-
-     <b class="mobileOnly popDetails"></b>
 
 </section>

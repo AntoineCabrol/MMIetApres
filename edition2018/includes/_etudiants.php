@@ -1,4 +1,6 @@
-<section class="etudiants" id="etudiants">
+<section id="etudiants" class="section etudiants"
+         data-action="display"
+         data-name="sectionEtudiants">
 
   <h1 class="deskOnly h_etudiants">Témoignages</h1>
 
@@ -89,7 +91,5 @@
   </div>
 
   <a class="mobileOnly bouton bouton--off">Inscription</a>
-
-  <b class="mobileOnly popDetails"></b>
 
 </section>

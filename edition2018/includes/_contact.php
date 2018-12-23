@@ -1,4 +1,6 @@
-<footer id="contact" class="contact">
+<footer id="contact" class="section contact"
+        data-action="display"
+        data-name="sectionContact">
 
   <h1 class="deskOnly h_footer">Contact</h1>
 
@@ -51,10 +53,5 @@
   </div>
 
   <p class="deskOnly contact_mentions">©2018 - <a href="mentions.php">Mentions Légales</a></p>
-
-  <label class="mobileOnly mentions-trigger">Mentions légales</label>
-  <?php include "_mentions.php" ?>
-
-  <b class="mobileOnly popDetails"></b>
 
 </footer>

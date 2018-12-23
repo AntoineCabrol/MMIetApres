@@ -20,7 +20,25 @@ a:visited { color: inherit; text-decoration: none;}
 a:hover { text-decoration: underline;}
 a:active {text-decoration: underline;}
 
-input, a, label {cursor: pointer;}
+input, a, label, button {cursor: pointer;}
+
+/* Reset `button` default styles */
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
 
 ul, li {margin: none;}
 

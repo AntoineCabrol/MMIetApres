@@ -1,4 +1,6 @@
-<header id="evenement" class="evenement">
+<header id="evenement" class="section evenement"
+        data-action="display"
+        data-name="sectionEvenement">
 
   <div class="wrap1">
 
@@ -22,7 +24,5 @@
   	</div>
 
 	</div>
-
-  <b class="mobileOnly popDetails"></b>
 
 </header>

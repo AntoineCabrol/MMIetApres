@@ -2,6 +2,10 @@ $(document).ready(function(){
 
 
 
+var screenWidth = $(window).width();
+
+
+
 
 //////////////////////////////////////////////////
 //
@@ -36,32 +40,15 @@ $(".logo").click(function() {
 
 //////////////////////////////////////////////////
 //
-//        Programme cliquable
+//        Programme accordéon desktop
 //
 //////////////////////////////////////////////////
-
-var screenWidth = $(window).width();
 
 if(screenWidth > 1024) {
   $(".programme__event:first-of-type").addClass("focused");
   $(".programme__event:not(.programme__contenu--sup)").click(function() {
       $(".programme__event").removeClass("focused");
       $(this).addClass("focused");
-  });
-} else {
-  var indic = 0;
-  $(".programme__event:not(.programme__contenu--sup)").click(function() {
-    if(indic == 0) {
-      $(".programme").addClass("focused");
-      $(".popDetails").addClass("popDetails--opened");
-      $(this).addClass("focused");
-      indic = 1;
-    } else {
-      $(".programme").removeClass("focused");
-      $(".popDetails").removeClass("popDetails--opened");
-      $(this).removeClass("focused");
-      indic = 0;
-    }
   });
 }
 
@@ -70,21 +57,71 @@ if(screenWidth > 1024) {
 
 //////////////////////////////////////////////////
 //
-//        Mentions popup mobile
+//        Navigation mobile
 //
 //////////////////////////////////////////////////
 
-$(".mentions-trigger").click(function() {
-  if(indic == 0) {
-    $(".contact").addClass("focused").scrollTop(0);
-    $(".popDetails").addClass("popDetails--opened");
-    indic = 1;
-  } else {
-    $(".contact").removeClass("focused");
-    $(".popDetails").removeClass("popDetails--opened");
-    indic = 0;
-  }
-});
+if(screenWidth < 1024) {
+
+  var trigger = $("*[data-action=trigger]");
+  var display = $("*[data-action=display]");
+  var hybrid  = $("*[data-action=hybrid]");
+  var menu    = $(".logo_menu");
+  var name, type, parent, action;
+  var indic = 0;
+
+  trigger.click(function(){
+    // remise à 0
+    $("*").removeClass("displayed", "focused", "soften", "bis");
+
+    name   = $(this).attr("data-name");
+    type   = $(this).attr("data-type");
+    action = $(this).attr("data-action");
+
+    // TRI SELON TRIGGER
+    // Trigger d'affichage normal (section...)
+    if (type=="main") {
+      console.log("Type displayed");
+      menu.removeClass("bis");
+      $("[data-name="+name+"]").addClass("displayed");
+    }
+    // Trigger d'affichage secondaire (contact...)
+    else if (type=="bis") {
+      console.log("Type displayed--bis");
+      menu.addClass("bis");
+      $("[data-name="+name+"]").addClass("displayed");
+    }
+    // Trigger de focus sur un élément (événement, étudiant...)
+    else {
+      console.log("Type focused");
+      parent = $(this).attr("data-parent");
+      $("[data-name="+name+"]").addClass("focused");
+      $(menu, parent).addClass("soften");
+    }
+  });
+
+  hybrid.click(function(){
+    console.log("Hybrid focused, indic="+indic);
+    parent = $(this).attr("data-parent");
+    if (indic == 0) {
+      $(this).addClass("focused");
+      $("[data-action=display][data-name="+parent+"]").addClass("focused");
+      $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
+      $(menu).addClass("soften");
+      indic = 1;
+      console.log("Ouverture");
+    } else {
+      $(this).removeClass("focused");
+      $("[data-action=display][data-name="+parent+"]").removeClass("focused");
+      $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
+      $(menu).removeClass("soften");
+      indic = 0;
+      console.log("Fermeture");
+    }
+  });
+
+
+}
 
 
 
@@ -133,13 +170,13 @@ $(".sliderMob__elem").click(function() {
     $(".sliderMob__elem").removeClass("focused");
     slider.removeClass("focused");
     parent.removeClass("focused");
-    $(".logo_menu").removeClass("focused");
+    $(".logo_menu").removeClass("soften");
   } else {
-    $(".sliderMob__elem").removeClass("focused");
+    $(".sliderMob__elem").addClass("focused");
     $(this).addClass("focused");
     slider.addClass("focused");
     parent.addClass("focused");
-    $(".logo_menu").addClass("focused");
+    $(".logo_menu").addClass("soften");
   }
 
 });

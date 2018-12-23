@@ -1,14 +1,12 @@
+<div class="logo_menu displayed"
+     data-action="display"
+     data-name="menu">
 
-<input type="radio" name="sections" id="radio_evenement" checked/>
-<input type="radio" name="sections" id="radio_programme" />
-<input type="radio" name="sections" id="radio_entreprises" />
-<input type="radio" name="sections" id="radio_etudiants" />
-<input type="radio" name="sections" id="radio_contact" />
-
-
-<div class="logo_menu">
-  <div class="logo">
-    <svg class="logo_mmietapres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.88 135.53" onclick="location.href='http://www.mmietapres.fr/'">
+  <div class="logo"
+       data-action="trigger"
+       data-type="main"
+       data-name="menu">
+    <svg class="logo_mmietapres" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 279.88 135.53">
       <title>Logo MMI&Après</title>
       <g id="Calque_2" data-name="Calque 2">
         <path class="couleur2 logo__A" d="M96.05,126.72H83.88l-2.37,7.95h-10L84.86,93.75l5.09,0h0l5.11,0,13.38,40.92h-10Zm-10-7.31h7.78L90,106.71h-.17Z"/>
@@ -25,32 +23,51 @@
       </g>
     </svg>
   </div>
+
   <nav class="menu">
-    <label for="radio_evenement" checked>
-      <a href="#evenement">Présentation</a>
-    </label>
-    <label for="radio_programme">
-      <a href="#programme">Programme</a>
-    </label>
-    <label for="radio_entreprises">
-      <span class="deskOnly">
-        <a href="#entreprises">Ils seront là</a>
-      </span>
-      <span class="mobileOnly">Entreprises</span>
-    </label>
-    <label for="radio_etudiants">
-      <span class="deskOnly">
-        <a href="#etudiants">Edition 2018</a>
-      </span>
-      <span class="mobileOnly">Etudiants</span>
-    </label>
-    <label class="deskOnly">
-      <a href="#evenement">S'inscrire</a>
-    </label>
-    <label class="menu__contact" for="radio_contact">
-      <a href="#contact">Contact</a>
-    </label>
+    <a href="#evenement"
+       class="menu__onglet"
+       data-action="trigger"
+       data-type="main"
+       data-name="sectionEvenement">Présentation</a>
+
+    <a href="#programme"
+       class="menu__onglet"
+       data-action="trigger"
+       data-type="main"
+       data-name="sectionProgramme">Programme</a>
+
+    <a href="#entreprises"
+       class="menu__onglet"
+       data-action="trigger"
+       data-type="main"
+       data-name="sectionEntreprises">Entreprises</a>
+
+    <a href="#etudiants"
+       class="menu__onglet"
+       data-action="trigger"
+       data-type="main"
+       data-name="sectionEtudiants">Etudiants</a>
+
+    <a href="#evenement"
+       class="deskOnly menu__onglet">S'inscrire</a>
+
+    <a href="#contact"
+       class="menu__onglet menu__onglet--contact"
+       class=""
+       data-action="trigger"
+       data-type="bis"
+       data-name="sectionContact">Contact</a>
   </nav>
-  <label class="mobileOnly menu__contact--fermer" for="radio_evenement"></label>
-  <label class="popDetails-label" for="popDetails"></label>
+
+  <aside class="mentions-wrap mobileOnly"
+         data-action="display"
+         data-name="mentions">
+    <button class="mentions-trigger"
+           data-action="hybrid"
+           data-type="focus"
+           data-parent="mentions">Mentions légales</button>
+    <?php include "_mentions.php" ?>
+  </aside>
+
 </div>

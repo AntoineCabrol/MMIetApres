@@ -18,7 +18,8 @@
   <meta name="theme-color" content="#130E7C"/>
   <link rel="icon" href="images/appIcon-192.png" />
   <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/global.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,7 +28,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-130619879-1');
     </script>
   <meta name="author" content="MMI&Après"/>
