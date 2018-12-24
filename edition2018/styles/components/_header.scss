@@ -223,7 +223,6 @@ input[type="radio"] {
       margin: 10px auto;
       opacity: 0;
       overflow: hidden;
-      transition: all 0.6s;
       h4 { text-align: left; }
       &-wrap {
         visibility: hidden;
@@ -279,7 +278,7 @@ input[type="radio"] {
   .mentions-wrap.focused {
     z-index: 1;
     position: fixed;
-    padding-top: 10vh;
+    padding-top: 20px;
     overflow: auto;
     background: rgba(255,255,255,0.8);
     .mentions-trigger {
