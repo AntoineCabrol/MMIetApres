@@ -36,11 +36,11 @@
          data-type="softFocus"
          data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/entreprises/new_quest.png" alt="logo" width="100%" />
+        <img src="images/entreprises/newquest.svg" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="https://www.newquest.fr/">NewQuest</a></h4>
-        Agence digitale et innovatrice
+        Experience agency, digitale et innovatrice
       </div>
     </div>
     <div class="entreprise sliderMob__elem"
@@ -77,6 +77,42 @@
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="https://www.zeecom.fr/">Zeecom</a></h4>
         Agence de communication digitale
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/serigrafic_solutions.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.serigrafic-solutions.fr/">Serigraphic Solutions</a></h4>
+        Entreprise de e-commerce
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/pixminds.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="http://www.pixminds.fr/">Pixminds</a></h4>
+        Holding gérant les sociétés Ark (recherche), R-Cade (bornes d'arcade) et E-concept (distribution gaming)
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/reactis.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.reactis.fr/">Reactis</a></h4>
+        Entreprise innovatrice, de recherche et informatique
       </div>
     </div>
   </div>
