@@ -72,7 +72,7 @@ if(screenWidth < 1024) {
 
   trigger.click(function(){
     // remise à 0
-    $("*").removeClass("displayed", "focused", "soften", "bis");
+    $("*").removeClass("displayed", "focused", "softFocused", "soften", "bis");
 
     name   = $(this).attr("data-name");
     type   = $(this).attr("data-type");
@@ -91,32 +91,65 @@ if(screenWidth < 1024) {
       menu.addClass("bis");
       $("[data-name="+name+"]").addClass("displayed");
     }
-    // Trigger de focus sur un élément (événement, étudiant...)
-    else {
+    // Trigger de focus (avec fond rouge) sur un élément
+    else if (type=="focus") {
       console.log("Type focused");
       parent = $(this).attr("data-parent");
       $("[data-name="+name+"]").addClass("focused");
       $(menu, parent).addClass("soften");
     }
+    // Trigger de focus soft (sans fond rouge) sur un élément
+    else {
+      console.log("Type softFocused");
+      parent = $(this).attr("data-parent");
+      $("[data-name="+name+"]").addClass("softFocused");
+      $(menu, parent).addClass("soften");
+    }
   });
 
   hybrid.click(function(){
-    console.log("Hybrid focused, indic="+indic);
+    console.log("Hybrid, indic="+indic);
+
+    type   = $(this).attr("data-type");
     parent = $(this).attr("data-parent");
-    if (indic == 0) {
-      $(this).addClass("focused");
-      $("[data-action=display][data-name="+parent+"]").addClass("focused");
-      $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
-      $(menu).addClass("soften");
-      indic = 1;
-      console.log("Ouverture");
-    } else {
-      $(this).removeClass("focused");
-      $("[data-action=display][data-name="+parent+"]").removeClass("focused");
-      $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
-      $(menu).removeClass("soften");
-      indic = 0;
-      console.log("Fermeture");
+
+    // Trigger de focus (avec fond rouge) sur un élément
+    if (type=="focus") {
+      console.log("Type focused");
+      if (indic == 0) {
+        $(this).addClass("focused");
+        $("[data-action=display][data-name="+parent+"]").addClass("focused");
+        $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
+        $(menu).addClass("soften");
+        indic = 1;
+        console.log("Ouverture");
+      } else {
+        $(this).removeClass("focused");
+        $("[data-action=display][data-name="+parent+"]").removeClass("focused");
+        $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
+        $(menu).removeClass("soften");
+        indic = 0;
+        console.log("Fermeture");
+      }
+    }
+    // Trigger de focus soft (sans fond rouge) sur un élément
+    else {
+      console.log("Type softFocused");
+      if (indic == 0) {
+        $(this).addClass("softFocused");
+        $("[data-action=display][data-name="+parent+"]").addClass("softFocused");
+        $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
+        $(menu).addClass("soften");
+        indic = 1;
+        console.log("Ouverture");
+      } else {
+        $(this).removeClass("softFocused");
+        $("[data-action=display][data-name="+parent+"]").removeClass("softFocused");
+        $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
+        $(menu).removeClass("soften");
+        indic = 0;
+        console.log("Fermeture");
+      }
     }
   });
 
@@ -145,40 +178,6 @@ $('.slider').slick({
       settings: "unslick"
     }
   ]
-});
-
-
-
-
-//////////////////////////////////////////////////
-//
-//        Entreprises mobile
-//
-//////////////////////////////////////////////////
-
-$(".sliderMob__elem").click(function() {
-
-  var elem = $(this);
-  var elemPosition = elem.position().left;
-
-  var slider = $('.sliderMob');
-  slider.scrollLeft( elemPosition );
-
-  var parent = slider.parent();
-
-  if (elem.hasClass("focused")) {
-    $(".sliderMob__elem").removeClass("focused");
-    slider.removeClass("focused");
-    parent.removeClass("focused");
-    $(".logo_menu").removeClass("soften");
-  } else {
-    $(".sliderMob__elem").addClass("focused");
-    $(this).addClass("focused");
-    slider.addClass("focused");
-    parent.addClass("focused");
-    $(".logo_menu").addClass("soften");
-  }
-
 });
 
 

@@ -10,20 +10,44 @@
 
   .entreprises, .etudiants {
     padding: 0 calc( ( 100% - 480px ) / 2);
-    &.focused .intro,
-    &.focused .etPart,
-    &.focused .bouton {
+    &.softFocused .intro,
+    &.softFocused .etPart,
+    &.softFocused .bouton {
       display: none;
     }
-    &.focused .sliderMob .sliderMob__elem:not(.focused) {
-      display: none;
+
+    &.softFocused .sliderMob {
+      position: static;
+      margin-top: 60px;
+      padding: 0 20px;
+      touch-action: auto;
+      &__elem:not(.softFocused) { display: none; }
+      &__elem.softFocused {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .sliderMob__logo {
+          width: 220px;
+          &.temoignage_photo_fond { padding-bottom: 220px; }
+        }
+        .sliderMob__texte {
+          opacity: 1;
+          width: 90%;
+          height: 100%;
+          max-width: 320px;
+          margin: 30px auto;
+          direction: ltr;
+          pointer-events: all;
+          transition: opacity 0.2s;
+        }
+      }
     }
 
     .intro {
       display: block;
       margin: 60px 30px 10px;
     }
-
     .sliderMob {
       position: absolute;
       right: 0;
@@ -36,7 +60,7 @@
       overflow-y: hidden;
       touch-action: pan-x;
       transition: all 0.2s;
-      &.focused {
+      &.softFocused {
         overflow: visible;
         justify-content: center;
       }
@@ -45,30 +69,6 @@
         width: 130px;
         margin: 0 10px;
         transition: height 0.4s, top 0.4s;
-        &.focused {
-        	z-index: 1;
-        	position: absolute;
-          top: 0;
-        	left: 0;
-          flex-direction: column;
-        	width: 100%;
-        	margin: 0;
-          padding: 40px 0;
-          .sliderMob__logo {
-            width: 220px;
-            &.temoignage_photo_fond { padding-bottom: 220px; }
-          }
-          .sliderMob__texte {
-          	opacity: 1;
-          	width: 90%;
-            height: 100%;
-          	max-width: 320px;
-          	margin: 30px auto;
-            direction: ltr;
-            pointer-events: all;
-            transition: opacity 0.2s;
-          }
-        }
       }
       &__logo {
         width: 140px;

@@ -7,7 +7,11 @@
   <p class="mobileOnly intro">Ils ont trouvé un stage !</p>
 
   <div class="flex_temoignage sliderMob">
-    <div class="temoignage_block sliderMob__elem" data-S4="audiovisuel">
+    <div class="temoignage_block sliderMob__elem"
+         data-S4="audiovisuel"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEtudiants">
         <div class="temoignage_photo_fond sliderMob__logo"></div>
         <div class="temoignage_contenu sliderMob__texte">
             <span class="deskOnly barre_couleur" data-color="bleu"></span>
@@ -25,7 +29,11 @@
           <p class="temoignage_nom">Marie Raison</p>
         </div>
     </div>
-    <div class="temoignage_block sliderMob__elem" data-S4="programmation">
+    <div class="temoignage_block sliderMob__elem"
+         data-S4="programmation"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEtudiants">
         <div class="temoignage_photo_fond sliderMob__logo">
         </div>
         <div class="temoignage_contenu sliderMob__texte">
@@ -42,7 +50,11 @@
                 <p class="temoignage_nom">Clément Dumas</p>
         </div>
     </div>
-    <div class="temoignage_block sliderMob__elem" data-S4="graphisme">
+    <div class="temoignage_block sliderMob__elem"
+         data-S4="graphisme"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEtudiants">
         <div class="temoignage_photo_fond sliderMob__logo">
         </div>
         <div class="temoignage_contenu sliderMob__texte">
@@ -57,7 +69,11 @@
               <p class="temoignage_nom">Anna Levy</p>
         </div>
     </div>
-    <div class="temoignage_block sliderMob__elem" data-S4="communication">
+    <div class="temoignage_block sliderMob__elem"
+         data-S4="communication"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEtudiants">
         <div class="temoignage_photo_fond sliderMob__logo">
         </div>
         <div class="temoignage_contenu sliderMob__texte">

@@ -7,7 +7,10 @@
   <p class="mobileOnly intro">Elles viennent cette année !</p>
 
   <div class="slider sliderMob">
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/vas_y_paulette.png" alt="logo" width="100%" />
       </div>
@@ -16,7 +19,10 @@
         Agence de communication graphique
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/agence_en_ville.png" alt="logo" width="100%" />
       </div>
@@ -25,7 +31,10 @@
         Agence de communication graphique et architecturale
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/new_quest.png" alt="logo" width="100%" />
       </div>
@@ -34,7 +43,10 @@
         Agence digitale et innovatrice
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/agence_yocot.png" alt="logo" width="100%" />
       </div>
@@ -43,7 +55,10 @@
         Agence créatrice de vidéos professionnelles
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/agence_future.png" alt="logo" width="100%" />
       </div>
@@ -52,7 +67,10 @@
         Agence conseillère en communication visuelle et interactive
       </div>
     </div>
-    <div class="entreprise sliderMob__elem">
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/agence_zeecom.svg" alt="logo" width="100%" />
       </div>
