@@ -10,7 +10,7 @@
     <meta property="og:type" content="siteweb" />
     <meta property="og:description" content="La rencontre étudiants/entreprises du multimédia à Chambéry !" />
     <meta property="og:url" content="http://mmietapres.fr/" />
-    <meta property="og:image" content="images/og.png" />
+    <meta property="og:image" content="images/og.jpg" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i" rel="stylesheet">
   <link rel="stylesheet" href="styles/global.min.css" />
