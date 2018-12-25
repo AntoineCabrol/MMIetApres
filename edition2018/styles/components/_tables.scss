@@ -1,0 +1,25 @@
+// main: ../global.scss
+
+/** ================================================
+                # TABLES
+================================================ **/
+
+
+.programme__tables {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+
+  &.focused {
+    height: 100%;
+    opacity: 1;
+  }
+
+}
+
+
+@media (min-width: $tablette-paysage) {
+
+}
