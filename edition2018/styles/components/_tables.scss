@@ -4,17 +4,72 @@
                 # TABLES
 ================================================ **/
 
+.programme__tables-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.2s, opacity 0.3s;
+  &.displayed {
+    height: 100%;
+    opacity: 1;
+    & ~ .programme__event {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
 
 .programme__tables {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
+  width: 100%;
+  &, &-titre { transition: opacity 0.2s; }
+  &-titre { margin: 5px 0 25px; }
+  &-retour {
+    display: block;
+    margin: 0 auto;
+    &:hover ~ .programme__tables-titre,
+    &:hover ~ .programme__tables { opacity: 0.6; }
+  }
+}
 
-  &.focused {
-    height: 100%;
-    opacity: 1;
+.programme__table {
+  margin: 0;
+  padding: 12px 10px;
+  list-style: none;
+
+  &-agence {
+    margin-top: 0;
+    font-family: $police2;
+    color: lighten($couleur-texte, 20%);
+  }
+
+  &-passage {
+    display: flex;
+    &:hover &-etudiant { color: $couleur-logo2; }
+    &--ring { margin: 4px 0; }
+    &--ring &-horaire {
+      color: $couleur-logo1;
+      font-weight: bold;
+    }
+    &-horaire {
+      width: 29%;
+      margin-right: 8px;
+      margin-left: auto;
+      text-align: right;
+      line-height: 19px;
+    }
+    &-etudiant {
+      width: 69%;
+      margin-right: auto;
+      font-size: 14px;
+      line-height: 19px;
+      transition: color 0.2s;
+      &.soften { color: lighten($couleur-texte, 70%); }
+    }
   }
 
 }

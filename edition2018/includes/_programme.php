@@ -5,6 +5,8 @@
 	<h1 class="deskOnly">Programme</h1>
 	<p class="mobileOnly programme__date">Jeudi 17 Janvier</p>
 
+  <?php include "includes/_tables.php" ?>
+
 	<div class="programme__event" id="accueil"
        data-action="hybrid"
        data-type="focus"
@@ -45,11 +47,14 @@
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
 				Mise en place de petits entretiens entre professionnel et étudiant
+        <button class="programme__event-description--tables"
+                data-action="trigger"
+                data-type="main"
+                data-name="programmeTables">Programme table par table ❯</button>
 			</p>
 			<a class="mobileOnly bouton bouton--blanc bouton--off">Inscription</a>
 		</aside>
   </div>
-
 
   <div class="programme__event" id="buffet"
        data-action="hybrid"
@@ -80,7 +85,5 @@
 			</p>
 		</aside>
   </div>
-
-  <?php include "includes/_tables.php" ?>
 
 </section>

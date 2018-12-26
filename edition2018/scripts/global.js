@@ -68,104 +68,99 @@ if(screenWidth > 1024) {
 
 //////////////////////////////////////////////////
 //
-//        Navigation mobile
+//        Navigation intelligente
 //
 //////////////////////////////////////////////////
 
-if(screenWidth < 1024) {
+var trigger = $("*[data-action=trigger]");
+var display = $("*[data-action=display]");
+var hybrid  = $("*[data-action=hybrid]");
+var menu    = $(".logo_menu");
+var name, type, parent, action;
+var indic = 0;
 
-  var trigger = $("*[data-action=trigger]");
-  var display = $("*[data-action=display]");
-  var hybrid  = $("*[data-action=hybrid]");
-  var menu    = $(".logo_menu");
-  var name, type, parent, action;
-  var indic = 0;
+trigger.click(function(){
+  // remise à 0
+  $("*").removeClass("displayed", "focused", "softFocused", "soften", "bis");
 
-  trigger.click(function(){
-    // remise à 0
-    $("*").removeClass("displayed", "focused", "softFocused", "soften", "bis");
+  name   = $(this).attr("data-name");
+  type   = $(this).attr("data-type");
+  action = $(this).attr("data-action");
 
-    name   = $(this).attr("data-name");
-    type   = $(this).attr("data-type");
-    action = $(this).attr("data-action");
-
-    // TRI SELON TRIGGER
-    // Trigger d'affichage normal (section...)
-    if (type=="main") {
-      console.log("Type displayed");
-      menu.removeClass("bis");
-      $("[data-name="+name+"]").addClass("displayed");
-    }
-    // Trigger d'affichage secondaire (contact...)
-    else if (type=="bis") {
-      console.log("Type displayed--bis");
-      menu.addClass("bis");
-      $("[data-name="+name+"]").addClass("displayed");
-    }
-    // Trigger de focus (avec fond rouge) sur un élément
-    else if (type=="focus") {
-      console.log("Type focused");
-      parent = $(this).attr("data-parent");
-      $("[data-name="+name+"]").addClass("focused");
-      $(menu, parent).addClass("soften");
-    }
-    // Trigger de focus soft (sans fond rouge) sur un élément
-    else {
-      console.log("Type softFocused");
-      parent = $(this).attr("data-parent");
-      $("[data-name="+name+"]").addClass("softFocused");
-      $(menu, parent).addClass("soften");
-    }
-  });
-
-  hybrid.click(function(){
-    console.log("Hybrid, indic="+indic);
-
-    type   = $(this).attr("data-type");
+  // TRI SELON TRIGGER
+  // Trigger d'affichage normal (section...)
+  if (type=="main") {
+    console.log("Type displayed");
+    menu.removeClass("bis");
+    $("[data-name="+name+"]").addClass("displayed");
+  }
+  // Trigger d'affichage secondaire (contact...)
+  else if (type=="bis") {
+    console.log("Type displayed--bis");
+    menu.addClass("bis");
+    $("[data-name="+name+"]").addClass("displayed");
+  }
+  // Trigger de focus (avec fond rouge) sur un élément
+  else if (type=="focus") {
+    console.log("Type focused");
     parent = $(this).attr("data-parent");
+    $("[data-name="+name+"]").addClass("focused");
+    $(menu, parent).addClass("soften");
+  }
+  // Trigger de focus soft (sans fond rouge) sur un élément
+  else {
+    console.log("Type softFocused");
+    parent = $(this).attr("data-parent");
+    $("[data-name="+name+"]").addClass("softFocused");
+    $(menu, parent).addClass("soften");
+  }
+});
 
-    // Trigger de focus (avec fond rouge) sur un élément
-    if (type=="focus") {
-      console.log("Type focused");
-      if (indic == 0) {
-        $(this).addClass("focused");
-        $("[data-action=display][data-name="+parent+"]").addClass("focused");
-        $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
-        $(menu).addClass("soften");
-        indic = 1;
-        console.log("Ouverture");
-      } else {
-        $(this).removeClass("focused");
-        $("[data-action=display][data-name="+parent+"]").removeClass("focused");
-        $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
-        $(menu).removeClass("soften");
-        indic = 0;
-        console.log("Fermeture");
-      }
+hybrid.click(function(){
+  console.log("Hybrid, indic="+indic);
+
+  type   = $(this).attr("data-type");
+  parent = $(this).attr("data-parent");
+
+  // Trigger de focus (avec fond rouge) sur un élément
+  if (type=="focus") {
+    console.log("Type focused");
+    if (indic == 0) {
+      $(this).addClass("focused");
+      $("[data-action=display][data-name="+parent+"]").addClass("focused");
+      $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
+      $(menu).addClass("soften");
+      indic = 1;
+      console.log("Ouverture");
+    } else {
+      $(this).removeClass("focused");
+      $("[data-action=display][data-name="+parent+"]").removeClass("focused");
+      $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
+      $(menu).removeClass("soften");
+      indic = 0;
+      console.log("Fermeture");
     }
-    // Trigger de focus soft (sans fond rouge) sur un élément
-    else {
-      console.log("Type softFocused");
-      if (indic == 0) {
-        $(this).addClass("softFocused");
-        $("[data-action=display][data-name="+parent+"]").addClass("softFocused");
-        $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
-        $(menu).addClass("soften");
-        indic = 1;
-        console.log("Ouverture");
-      } else {
-        $(this).removeClass("softFocused");
-        $("[data-action=display][data-name="+parent+"]").removeClass("softFocused");
-        $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
-        $(menu).removeClass("soften");
-        indic = 0;
-        console.log("Fermeture");
-      }
+  }
+  // Trigger de focus soft (sans fond rouge) sur un élément
+  else {
+    console.log("Type softFocused");
+    if (indic == 0) {
+      $(this).addClass("softFocused");
+      $("[data-action=display][data-name="+parent+"]").addClass("softFocused");
+      $("[data-action=hybrid][data-name="+parent+"]").addClass("displayed");
+      $(menu).addClass("soften");
+      indic = 1;
+      console.log("Ouverture");
+    } else {
+      $(this).removeClass("softFocused");
+      $("[data-action=display][data-name="+parent+"]").removeClass("softFocused");
+      $("[data-action=hybrid][data-name="+parent+"]").removeClass("displayed");
+      $(menu).removeClass("soften");
+      indic = 0;
+      console.log("Fermeture");
     }
-  });
-
-
-}
+  }
+});
 
 
 
