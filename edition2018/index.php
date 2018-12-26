@@ -3,17 +3,27 @@
 
 <body class="page-index">
 
-  <?php include "includes/_menu.php" ?>
+  <?php
+    echo '<aside class="notification';
 
-  <?php include "includes/_evenement.php" ?>
+    if (!$sock = @fsockopen('www.google.fr', 80, $num, $error, 5)) {
+      echo ' offline">';
+      echo 'Pas de connexion...';
+    }
+    else { echo '">'; }
 
-  <?php include "includes/_programme.php" ?>
+    echo '</aside>';
+  ?>
 
-  <?php include "includes/_entreprises.php" ?>
 
-  <?php include "includes/_etudiants.php" ?>
-
-  <?php include "includes/_contact.php" ?>
+  <?php
+  include "includes/_menu.php";
+  include "includes/_evenement.php";
+  include "includes/_programme.php";
+  include "includes/_entreprises.php";
+  include "includes/_etudiants.php";
+  include "includes/_contact.php";
+  ?>
 
 </body>
 

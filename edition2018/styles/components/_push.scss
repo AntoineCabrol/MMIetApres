@@ -1,0 +1,52 @@
+// main: ../global.scss
+
+/** ================================================
+               # PUSH Message
+================================================ **/
+
+
+.notification {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 40px;
+  padding: 15px;
+  color: white;
+  opacity: 1;
+  text-align: center;
+  transform: translateY(100%);
+  animation-duration: 4s;
+  transition: opacity 0.2s, transform 0.4s;
+  &::after {
+  	content: "";
+  	position: absolute;
+  	bottom: 0;
+  	right: 20px;
+  	display: block;
+  	width: 48px;
+  	height: 48px;
+  	background-image: url("../images/+.svg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: 20px;
+  	transform: rotate(45deg);
+  	filter: brightness(0) invert(1);
+  	cursor: pointer;
+  }
+  &.offline {
+    background-color: red;
+    animation-name: notification;
+    transform: translateY(0);
+  }
+  &.closed {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes notification {
+  0%,85% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
