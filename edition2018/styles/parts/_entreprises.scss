@@ -18,6 +18,7 @@
       margin: auto;
       cursor: default;
       &:hover .entreprise__texte {
+        z-index: 1;
         visibility: visible;
         opacity: 1;
         transition: opacity 0.2s;

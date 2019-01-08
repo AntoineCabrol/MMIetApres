@@ -6,6 +6,19 @@
 ================================================ **/
 
 
+.sliderMob__elem--doc::after {
+  z-index: 0;
+	content: "";
+	position: absolute;
+	bottom: 20px;
+	right: 30px;
+  width: 30px;
+  height: 30px;
+	background-image: url("../images/document.svg");
+  background-size: contain;
+  background-color: white;
+}
+
 @media (max-width: $tablette-paysage) {
 
   .entreprises, .etudiants {
