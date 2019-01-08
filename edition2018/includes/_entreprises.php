@@ -55,7 +55,7 @@
         Agence créatrice de vidéos professionnelles
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -64,7 +64,8 @@
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="http://www.agence-future.com/">Agence future</a></h4>
-        Agence conseillère en communication visuelle et interactive
+        Agence conseillère en communication visuelle et interactive <br/><br/>
+        <a target="_blank" href="https://drive.google.com/open?id=1lsX02xXlZYG1SvVeEKpBB4M8oPKO_0De">Doc</a>
       </div>
     </div>
     <div class="entreprise sliderMob__elem"
@@ -91,7 +92,7 @@
         Entreprise de e-commerce
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -101,9 +102,10 @@
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="http://www.pixminds.fr/">Pixminds</a></h4>
         Holding gérant les sociétés Ark (recherche), R-Cade (bornes d'arcade) et E-concept (distribution gaming)
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1sFiOlZQbQrsZ5r6SG-LcVjSZ3b-pMvY5">Doc 1</a><a target="_blank" href="https://drive.google.com/open?id=1wuFbBCfOw1rpOXbItcBLrnfb2bBx3YsW">Doc 2</a>
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -113,6 +115,70 @@
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="https://www.reactis.fr/">Reactis</a></h4>
         Entreprise innovatrice, de recherche et informatique
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1v3qFe63yH6B9Xs1jvvCdVXUhQ7eHLEj6">Doc</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/megapix'ailes.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.megapixailes.com/">Megapix'Ailes</a></h4>
+        Agence de conseil et de production digitale interactive
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1QlYL0hmh9VsDRMl7TciI1oiZiizq6PmA">Doc</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/skewer_lab.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.skewerlab.com/">SkewerLab</a></h4>
+        Entreprise de developpement de vidéos personnalisées
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1NyE3Vawd3MrCoYzFWW9I5CpnPQ4Ua5E4">Doc</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/b4f.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.b4f.fr/">B4F</a></h4>
+        Leader national des solutions e-tourisme & création de sites web généralistes
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/ellistat.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://ellistat.com/">Ellistat</a></h4>
+        Start-up spécialisée dans la conception et la vente de logiciels statistiques
+        <br/><br/><br/><a target="_blank" href="https://drive.google.com/open?id=1YO3HD4Db4J6jZnvzPKC2cF4dcMFQEUdQ">Doc 1</a><a target="_blank" href="https://drive.google.com/open?id=1JkBEjhQ1iQWTfvf1zACJTyjVSvmo5OZH">Doc 2</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/yannick.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4>Yannick Perrin</h4>
+        Photographe
       </div>
     </div>
   </div>
