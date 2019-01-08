@@ -47,12 +47,27 @@
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
 				Mise en place de petits entretiens entre professionnel et étudiant
-        <button class="programme__event-description--tables"
+        <button class="programme__event-description--tables bouton--off"
                 data-action="trigger"
                 data-type="main"
                 data-name="programmeTables">Programme table par table ❯</button>
 			</p>
-			<a class="mobileOnly bouton bouton--blanc bouton--off">Inscription</a>
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLScU8itcWbHU5MdUf5DPczL4y9Q4K7LdoSS4L-tC7vf_0__TqA/viewform" class="mobileOnly bouton bouton--blanc">Inscription</a>
+		</aside>
+  </div>
+
+  <div class="programme__event" id="anciens"
+       data-action="hybrid"
+       data-type="focus"
+       data-parent="sectionProgramme">
+    <div class="programme__contenu">
+      <h3 class="programme__event-titre">Anciens étudiants</h3>
+      <span class="programme__event-date">9h30</span>
+    </div>
+		<aside class="programme__contenu programme__contenu--sup">
+			<p class="programme__event-description">
+				En parallèle des entretiens, venez écouter d'anciens étudiants parler de leur parcours.
+			</p>
 		</aside>
   </div>
 

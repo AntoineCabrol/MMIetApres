@@ -16,7 +16,7 @@
 
   		<h2 class="deskOnly">Inscription</h2>
   		<div class="boutons_inscription deskOnly">
-  			<a class="bouton bouton--off inscription_etudiants deskOnly">Etudiants</a>
+  			<a href="https://docs.google.com/forms/d/e/1FAIpQLScU8itcWbHU5MdUf5DPczL4y9Q4K7LdoSS4L-tC7vf_0__TqA/viewform" target="_blank" class="bouton inscription_etudiants deskOnly">Etudiants</a>
   			<a target="_blank"
            href="https://docs.google.com/forms/d/e/1FAIpQLSf5jyt6-rdhzoc-Xh0Z218aqm6jInbgftcvGRSSzBKuzPK-_Q/viewform"
            class="bouton inscription_professionels deskOnly">Professionnels</a>

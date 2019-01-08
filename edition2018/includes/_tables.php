@@ -66,7 +66,7 @@
               }
               else {
                 echo('<span class="programme__table-passage-etudiant');
-                if ($data[$c] == "Créneau libre") { echo(' soften">'); }
+                if ($data[$c] == "À venir") { echo(' soften">'); }
                 else { echo('">'); }
                 echo $data[$c];
                 echo('</span>');
