@@ -86,4 +86,6 @@
 		</aside>
   </div>
 
+  <?php include "includes/_tables.php" ?>
+
 </section>
