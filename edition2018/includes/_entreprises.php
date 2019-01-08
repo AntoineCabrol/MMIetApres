@@ -80,7 +80,7 @@
         Agence de communication digitale
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -90,6 +90,7 @@
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="https://www.serigrafic-solutions.fr/">Serigraphic Solutions</a></h4>
         Entreprise de e-commerce
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1GOQxiWJvfrC8_b33B09vfIsrPbI24NWp">Doc</a>
       </div>
     </div>
     <div class="entreprise sliderMob__elem sliderMob__elem--doc"
