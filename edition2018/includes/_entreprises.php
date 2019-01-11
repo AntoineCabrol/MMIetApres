@@ -182,6 +182,30 @@
         Photographe
       </div>
     </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/logo_SavoieNews.jpg" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4>SavoieNews</h4>
+        Cadrage, montage pour reportage, film corporate et captation multicaméra
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/jardin-secret_vaulx.jpg" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4>Jardins Secrets</h4>
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1ZPFTGD1gXAVwhqrYGzz6lC2t8q-IR_Fq">Doc</a>
+      </div>
+    </div>
   </div>
 
   <div class="mobileOnly etPart etPart--Vous">
