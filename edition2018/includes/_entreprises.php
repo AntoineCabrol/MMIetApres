@@ -203,6 +203,7 @@
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         <h4>Jardins Secrets</h4>
+        Un site insolite et poétique en Haute-Savoie
         <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1ZPFTGD1gXAVwhqrYGzz6lC2t8q-IR_Fq">Doc</a>
       </div>
     </div>
