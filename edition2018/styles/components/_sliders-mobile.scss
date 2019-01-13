@@ -100,3 +100,11 @@
   }
 
 }
+
+
+
+@media (max-width: $tablette-paysage) {
+  .sliderMob__elem--doc::after {
+    background-color: $couleur-fond-mobile;
+  }
+}

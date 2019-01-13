@@ -5,7 +5,18 @@
 	<h1 class="deskOnly">Programme</h1>
 	<p class="mobileOnly programme__date">Jeudi 17 Janvier</p>
 
-  <?php include "includes/_tables.php" ?>
+  <section class="programme__tables-wrap"
+           data-action="display"
+           data-name="programmeTables">
+    <button class="programme__tables-retour"
+           data-action="trigger"
+           data-type="main"
+           data-parent="programmeTables">❮ retour</button>
+    <h2 class="programme__tables-titre">Programme table par table</h2>
+    <div>
+      <img class="programme__tables-load" src="images/loading.gif" width="100%"/>
+    </div>
+  </section>
 
 	<div class="programme__event" id="accueil"
        data-action="hybrid"
@@ -47,7 +58,7 @@
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
 				Mise en place de petits entretiens entre professionnel et étudiant
-        <button class="programme__event-description--tables bouton--off"
+        <button class="programme__event-description--tables"
                 data-action="trigger"
                 data-type="main"
                 data-name="programmeTables">Programme table par table ❯</button>
@@ -96,11 +107,9 @@
     </div>
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
-				Moment d’échanges interactifs entre professionnels et étudiants autour d’une thématique définie
+				Conférence donnée par Olivier Berni et Thomas Jaussoin (<b><a href="https://www.lunabee.studio/">Lunabee Studio</a></b>) sur le thème “User Onboarding in mobile apps” (“Intégration des utilisateurs dans les applications mobiles”).
 			</p>
 		</aside>
   </div>
-
-  <?php include "includes/_tables.php" ?>
 
 </section>

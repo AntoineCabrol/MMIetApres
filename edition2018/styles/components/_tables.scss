@@ -34,6 +34,11 @@
     &:hover ~ .programme__tables-titre,
     &:hover ~ .programme__tables { opacity: 0.6; }
   }
+  &-load {
+    display: flex;
+    margin: 0px auto -70px;
+    width: 200px;
+  }
 }
 
 .programme__table {

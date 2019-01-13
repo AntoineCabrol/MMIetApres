@@ -187,10 +187,10 @@
          data-type="softFocus"
          data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/entreprises/logo_SavoieNews.jpg" alt="logo" width="100%" />
+        <img src="images/entreprises/logo_SavoieNews.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        <h4>SavoieNews</h4>
+        <h4><a target="_blank" href="http://www.savoie-news.fr/">SavoieNews</a></h4>
         Cadrage, montage pour reportage, film corporate et captation multicaméra
       </div>
     </div>
@@ -199,10 +199,10 @@
          data-type="softFocus"
          data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
-        <img src="images/entreprises/jardin-secret_vaulx.jpg" alt="logo" width="100%" />
+        <img src="images/entreprises/jardin-secret_vaulx.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">
-        <h4>Jardins Secrets</h4>
+        <h4><a target="_blank" href="https://www.jardins-secrets.com/">Jardins Secrets</a></h4>
         Un site insolite et poétique en Haute-Savoie
         <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1ZPFTGD1gXAVwhqrYGzz6lC2t8q-IR_Fq">Doc</a>
       </div>
