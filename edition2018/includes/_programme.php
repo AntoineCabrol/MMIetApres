@@ -5,6 +5,7 @@
 	<h1 class="deskOnly">Programme</h1>
 	<p class="mobileOnly programme__date">Jeudi 17 Janvier</p>
 
+  <!-- Programme tables par tables -->
   <section class="programme__tables-wrap"
            data-action="display"
            data-name="programmeTables">
@@ -18,6 +19,7 @@
     </div>
   </section>
 
+  <!-- Programme général -->
 	<div class="programme__event" id="accueil"
        data-action="hybrid"
        data-type="focus"

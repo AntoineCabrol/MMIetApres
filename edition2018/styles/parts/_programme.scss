@@ -163,7 +163,6 @@
 	.programme {
 		flex-flow: wrap;
 		justify-content: center;
-		padding-bottom: 80px;
 
 		&__event {
 			z-index: 1;
@@ -171,6 +170,7 @@
 			overflow: visible;
 			transition: margin-top 0.2s;
 			&:hover { border: none; }
+			&-description--tables { color: $couleur-logo2--clair; font-weight: bold; }
 		}
 
 		&__contenu:not(.programme__contenu--sup) {

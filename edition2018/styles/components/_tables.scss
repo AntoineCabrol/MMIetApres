@@ -80,6 +80,16 @@
 }
 
 
-@media (min-width: $tablette-paysage) {
+@media (max-width: $tablette-portrait) {
+  .programme__tables {
+    margin-bottom: 80px;
+    &-wrap { overflow: visible; }
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 380px) {
+  .programme__tables {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

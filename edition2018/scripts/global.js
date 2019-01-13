@@ -5,27 +5,6 @@ $(document).ready(function(){
 var screenWidth = $(window).width();
 
 
-//////////////////////////////////////////////////
-//
-//        Chargement AJAX programmeTables
-//
-//////////////////////////////////////////////////
-
-$(".programme__event-description--tables").click(function(){
-  console.log("=> Appel tables");
-  $.ajax({
-    url: "../includes/_tables.php",
-    type: "POST",
-    data: $(".programme__tables").serialize(),
-    dataType: 'html',
-    success: function(result){
-      $(".programme__tables-wrap div").html(result);
-    }
-  });
-});
-
-
-
 
 //////////////////////////////////////////////////
 //
@@ -207,6 +186,34 @@ $('.slider').slick({
     }
   ]
 });
+
+
+
+
+//////////////////////////////////////////////////
+//
+//        Chargement AJAX programmeTables
+//
+//////////////////////////////////////////////////
+
+$(".programme__event-description--tables").click(function(){
+  console.log("=> Appel tables");
+  $.ajax({
+    url: "../includes/_tables.php",
+    type: "POST",
+    data: $(".programme__tables").serialize(),
+    dataType: 'html',
+    success: function(result){
+      $(".programme__tables-wrap div").html(result);
+    }
+  });
+});
+
+if(screenWidth < 1024) {
+  $(".programme__tables-retour, .programme__event-description--tables").click(function(){
+    $(".programme").addClass("displayed");
+  });
+}
 
 
 
