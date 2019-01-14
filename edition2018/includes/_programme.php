@@ -94,7 +94,7 @@
     </div>
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
-				Pause pour reprendre des forces, c’est le moment pour échanger et rencontrer d’autres entreprises/étudiants
+				Pause pour reprendre des forces, c’est le moment pour échanger et rencontrer d’autres entreprises
 			</p>
 		</aside>
   </div>
