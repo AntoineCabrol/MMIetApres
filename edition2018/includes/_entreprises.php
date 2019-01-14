@@ -183,7 +183,7 @@
         Photographe
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <!--div class="entreprise sliderMob__elem"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -194,7 +194,7 @@
         <h4><a target="_blank" href="http://www.savoie-news.fr/">SavoieNews</a></h4>
         ...
       </div>
-    </div>
+    </div-->
     <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
