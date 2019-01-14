@@ -19,7 +19,7 @@
         Agence de communication graphique
       </div>
     </div>
-    <div class="entreprise sliderMob__elem"
+    <div class="entreprise sliderMob__elem sliderMob__elem--doc"
          data-action="hybrid"
          data-type="softFocus"
          data-parent="sectionEntreprises">
@@ -29,6 +29,7 @@
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="http://lagenceenville.com/">Agence En Ville</a></h4>
         Agence de communication graphique et architecturale
+        <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1Pzp8P2TzpjJvfo0jdPh9lZHYGkykKuX9">Doc</a>
       </div>
     </div>
     <div class="entreprise sliderMob__elem"
@@ -191,7 +192,7 @@
       </div>
       <div class="entreprise__texte  sliderMob__texte">
         <h4><a target="_blank" href="http://www.savoie-news.fr/">SavoieNews</a></h4>
-        Cadrage, montage pour reportage, film corporate et captation multicaméra
+        ...
       </div>
     </div>
     <div class="entreprise sliderMob__elem sliderMob__elem--doc"
@@ -205,6 +206,30 @@
         <h4><a target="_blank" href="https://www.jardins-secrets.com/">Jardins Secrets</a></h4>
         Un site insolite et poétique en Haute-Savoie
         <br/><br/><a target="_blank" href="https://drive.google.com/open?id=1ZPFTGD1gXAVwhqrYGzz6lC2t8q-IR_Fq">Doc</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/defours-logo.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="http://www.defours.com/">Defours Production</a></h4>
+        Cadrage, montage pour reportage, film corporate et captation multicaméra
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+       data-action="hybrid"
+       data-type="softFocus"
+       data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/logo_pump.jpg" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://www.univers-pump.fr/">Univers Pump</a></h4>
+        Ne prend pas de stagiaire
       </div>
     </div>
   </div>
