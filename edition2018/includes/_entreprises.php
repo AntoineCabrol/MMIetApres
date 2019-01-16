@@ -12,6 +12,18 @@
          data-type="softFocus"
          data-parent="sectionEntreprises">
       <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/lunabee.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a href="#tables_rondes">Lunabee</a></h4>
+        Conférence exclusive donnée par Olivier Berni et Thomas Jaussoin ! <a href="#tables_rondes">(voir Tables Rondes)</a>
+      </div>
+    </div>
+    <div class="entreprise sliderMob__elem"
+         data-action="hybrid"
+         data-type="softFocus"
+         data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
         <img src="images/entreprises/vas_y_paulette.png" alt="logo" width="100%" />
       </div>
       <div class="entreprise__texte  sliderMob__texte">

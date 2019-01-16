@@ -57,9 +57,9 @@ $(".logo").click(function() {
 //////////////////////////////////////////////////
 
 if(screenWidth > 1024) {
-  $(".programme__event:first-of-type").addClass("focused");
+  $(".programme__event:last-of-type").addClass("focused");
   $(".programme__event:not(.programme__contenu--sup)").click(function() {
-      $(".programme__event").removeClass("focused");
+      $(".programme__event").not(this).removeClass("focused");
       $(this).addClass("focused");
   });
 }
