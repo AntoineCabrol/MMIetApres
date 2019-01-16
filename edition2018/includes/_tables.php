@@ -16,6 +16,18 @@ else {
   $table7 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1382786822&single=true&output=csv";
   $table8 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=871588507&single=true&output=csv";
   $table9 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1390883126&single=true&output=csv";
+  $table10 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=249353402&single=true&output=csv";
+  $table11 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=542453144&single=true&output=csv";
+  $table12 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1301255588&single=true&output=csv";
+  $table13 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=396047039&single=true&output=csv";
+  $table14 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=2012941971&single=true&output=csv";
+  $table15 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=216889026&single=true&output=csv";
+  $table16 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=555694364&single=true&output=csv";
+  $table17 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1460285084&single=true&output=csv";
+  $table18 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1786105298&single=true&output=csv";
+  $table19 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=925650196&single=true&output=csv";
+  $table20 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=1452754544&single=true&output=csv";
+  $table21 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LiQUPEto4RCcRTmrluqHtzPii0uhgP-PcIPXkruubG5FscWiam1et73DIQgsAVI2lHI5XZ7vkaM6/pub?gid=939326290&single=true&output=csv";
 
   $tables = array(
     1 => $table1,
@@ -27,6 +39,18 @@ else {
     7 => $table7,
     8 => $table8,
     9 => $table9,
+    10 => $table10,
+    11 => $table11,
+    12 => $table12,
+    13 => $table13,
+    14 => $table14,
+    15 => $table15,
+    16 => $table16,
+    17 => $table17,
+    18 => $table18,
+    19 => $table19,
+    20 => $table20,
+    21 => $table21,
   );
 
   for ($table=1; $table < sizeof($tables)+1; $table++) {
@@ -55,7 +79,8 @@ else {
             }
             else {
               echo('<span class="programme__table-passage-etudiant');
-              if ($data[$c] == "À venir") { echo(' soften">'); }
+              if ($data[$c] == "Libre") { echo(' soften">'); }
+              elseif ($data[$c] == "PAUSE") { echo(' break">'); }
               else { echo('">'); }
               echo $data[$c];
               echo('</span>');

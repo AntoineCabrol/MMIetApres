@@ -31,8 +31,7 @@
   &-retour {
     display: block;
     margin: 0 auto;
-    &:hover ~ .programme__tables-titre,
-    &:hover ~ .programme__tables { opacity: 0.6; }
+    &:hover ~ * { opacity: 0.6; }
   }
   &-load {
     display: flex;
@@ -53,13 +52,9 @@
   }
 
   &-passage {
+    position: relative;
     display: flex;
-    &:hover &-etudiant { color: $couleur-logo2; }
-    &--ring { margin: 4px 0; }
-    &--ring &-horaire {
-      color: $couleur-logo1;
-      font-weight: bold;
-    }
+    &:hover { color: $couleur-logo2; }
     &-horaire {
       width: 29%;
       margin-right: 8px;
@@ -74,6 +69,20 @@
       line-height: 19px;
       transition: color 0.2s;
       &.soften { color: lighten($couleur-texte, 70%); }
+      &.break {
+        color: $couleur-logo1;
+        opacity: 0.6;
+        &::before, &::after {
+        	content: "";
+        	position: absolute;
+        	top: 9px;
+        	width: 46px;
+        	height: 1px;
+        	background: $couleur-logo1;
+        }
+        &::before { left: 12px; }
+        &::after { left: 110px; }
+      }
     }
   }
 

@@ -109,7 +109,7 @@
     </div>
 		<aside class="programme__contenu programme__contenu--sup">
 			<p class="programme__event-description">
-				Conférence donnée par Olivier Berni et Thomas Jaussoin (<b><a href="https://www.lunabee.studio/">Lunabee Studio</a></b>) sur le thème “User Onboarding in mobile apps” (“Intégration des utilisateurs dans les applications mobiles”).
+				Conférence donnée par Olivier Berni et Thomas Jaussoin (<strong><a href="https://www.lunabee.studio/">Lunabee Studio</a></strong>) sur le thème <strong>“UserOnboarding in mobile apps”</strong> (“Intégration des utilisateurs dans les applications mobiles”).
 			</p>
 		</aside>
   </div>
