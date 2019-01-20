@@ -244,6 +244,18 @@
         Ne prend pas de stagiaire
       </div>
     </div>
+    <div class="entreprise sliderMob__elem"
+       data-action="hybrid"
+       data-type="softFocus"
+       data-parent="sectionEntreprises">
+      <div class="entreprise__logo  sliderMob__logo">
+        <img src="images/entreprises/logo-muz.png" alt="logo" width="100%" />
+      </div>
+      <div class="entreprise__texte  sliderMob__texte">
+        <h4><a target="_blank" href="https://muzagency.com/agence/">MUZ agency</a></h4>
+        Agence disruptive
+      </div>
+    </div>
   </div>
 
   <div class="mobileOnly etPart etPart--Vous">
@@ -262,6 +274,6 @@
 
   <a target="_blank"
      href="https://docs.google.com/forms/d/e/1FAIpQLSf5jyt6-rdhzoc-Xh0Z218aqm6jInbgftcvGRSSzBKuzPK-_Q/viewform"
-     class="mobileOnly bouton">Inscription</a>
+     class="mobileOnly bouton bouton--off">Inscription</a>
 
 </section>

@@ -106,6 +106,6 @@
 
   </div>
 
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLScU8itcWbHU5MdUf5DPczL4y9Q4K7LdoSS4L-tC7vf_0__TqA/viewform" class="mobileOnly bouton">Inscription</a>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc854mEwQ4sSQWvyoFDIdkDkuADONY0P-UARCz6CHveB1CAew/viewform" class="mobileOnly bouton">Inscription</a>
 
 </section>
