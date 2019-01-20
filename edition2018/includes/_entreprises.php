@@ -2,9 +2,9 @@
          data-action="display"
          data-name="sectionEntreprises">
 
-  <h1 class="deskOnly">Ils seront là</h1>
+  <h1 class="deskOnly">Ils étaient là</h1>
 
-  <p class="mobileOnly intro">Elles viennent cette année !</p>
+  <p class="mobileOnly intro">Elles sont venues cette année !</p>
 
   <div class="slider sliderMob">
     <div class="entreprise sliderMob__elem"
