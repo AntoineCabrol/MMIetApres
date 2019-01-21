@@ -3,8 +3,8 @@ Vous êtes un professionnel du secteur Multimédia ? Un ancien étudiant de la f
 
 https://mmietapres.fr/
 
-## EDITIONS
-N°|Développeur(s)|Année
+## HISTORIQUE
+Édition|Développeur(s)|Année
  ------------ | ------------ | ------------
  3ème édition | [Salah Lamkadem](https://www.linkedin.com/in/salah-lamkadem-669305124/) | 2018
  4ème édition | [Antoine Cabrol](https://www.linkedin.com/in/antoine-cabrol/) - [Elina Routin](https://www.linkedin.com/in/elina-routin-b374b7158/) - Bertrand Passieux | 2019
