@@ -6,5 +6,5 @@ https://mmietapres.fr/
 ## HISTORIQUE
 Édition|Développeur(s)|Année
  ------------ | ------------ | ------------
- 3ème édition | [Salah Lamkadem](https://www.linkedin.com/in/salah-lamkadem-669305124/) | 2018
- 4ème édition | [Antoine Cabrol](https://www.linkedin.com/in/antoine-cabrol/) - [Elina Routin](https://www.linkedin.com/in/elina-routin-b374b7158/) - Bertrand Passieux | 2019
+ 3ème édition | [Salah Lamkadem](https://www.linkedin.com/in/salah-lamkadem-669305124/) | 2017
+ 4ème édition | [Antoine Cabrol](https://www.linkedin.com/in/antoine-cabrol/) - [Elina Routin](https://www.linkedin.com/in/elina-routin-b374b7158/) - Bertrand Passieux | 2018
